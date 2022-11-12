@@ -51,6 +51,7 @@
     place-items: center;
     transition: background-color 0.3s;
     overflow: hidden;
+    width:100%;
 }
 
 .LoaderHeading{
@@ -58,7 +59,7 @@
     padding:0;
     position:absolute;
     top:70%;
-    /* animation: LoaderHeading 1s infinite alternate-reverse; */
+    overflow: hidden;
     font-style: oblique;
 }
 
