@@ -5,15 +5,13 @@ import {
     NavbarShrink,
     scrollToTop,
     navbarScrollIndicator,
-    menuNavbarIndicator
+    menuNavbarIndicator,
 } from "../../Components/Common/Functions";
-import {
-    HomeRounded,
-    GroupsRounded,
-    DvrRounded,
-    AddSharp,
-    ConnectWithoutContact,
-} from "@mui/icons-material";
+import { AddSharp, ConnectWithoutContact } from "@mui/icons-material";
+import { GiSkills } from "react-icons/gi";
+import { RiHome3Line } from "react-icons/ri";
+import { BiCategoryAlt } from "react-icons/bi";
+import { TbListDetails } from "react-icons/tb";
 
 const Navbar = () => {
     useEffect(() => {
@@ -27,11 +25,15 @@ const Navbar = () => {
     return (
         <div className="navbar_section flex jsb ac" id="navbar_section">
             <div className="navbar_logo flex ac">
-                <img className="nav_logo" src="./img/logo.png"  alt="" />
+                <img className="nav_logo" src="./img/logo.png" alt="" />
             </div>
             <div className="navbar_tabs flex je ac">
                 <ul className="nav_tabs flex jse ac row">
-                    <li className="nav_tab home active" id="homenav" title="Home">
+                    <li
+                        className="nav_tab home active"
+                        id="homenav"
+                        title="Home"
+                    >
                         <div className="link">Home</div>
                     </li>
                     <li className="nav_tab" id="skillsnav" title="Skills">
@@ -58,25 +60,25 @@ const Navbar = () => {
                     <ul id="menu" className="menu_tabs flex jc ac col">
                         <li className="menu_tab flex jc ac">
                             <div className="link flex ac" title="Home">
-                                <HomeRounded id="menu_icons" />
+                                <RiHome3Line id="menu_icons" />
                                 <span className="ts">Home</span>
                             </div>
                         </li>
                         <li className="menu_tab flex jc ac">
                             <div className="link flex ac row" title="Skills">
-                                <DvrRounded id="menu_icons" />
+                                <GiSkills id="menu_icons" />
                                 <span className="ts">Skills</span>
                             </div>
                         </li>
                         <li className="menu_tab flex jc ac">
                             <div className="link flex ac row" title="About">
-                                <GroupsRounded id="menu_icons" />
+                                <TbListDetails id="menu_icons" />
                                 <span className="ts">About</span>
                             </div>
                         </li>
                         <li className="menu_tab flex jc ac">
                             <div className="link flex ac row" title="Products">
-                                <DvrRounded id="menu_icons" />
+                                <BiCategoryAlt id="menu_icons" />
                                 <span className="ts">Products</span>
                             </div>
                         </li>

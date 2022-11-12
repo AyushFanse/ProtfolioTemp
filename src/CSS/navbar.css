@@ -155,7 +155,7 @@
 }
 
 .menu_tab > div {
-    width: 150px;
+    width: 40vw;
     color: var(--theme);
     gap: 10px;
 }
