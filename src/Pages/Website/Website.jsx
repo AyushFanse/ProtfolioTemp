@@ -11,9 +11,9 @@ import { ScrollTop } from "../../Components/Common/Functions";
 const Website = () => {
     const [loader, setLoader] = React.useState(false);
 
-    // setTimeout(() => {
-    //     setLoader(true);
-    // }, 3500);
+    setTimeout(() => {
+        setLoader(true);
+    }, 3500);
 
     return (
         <>
