@@ -1,0 +1,45 @@
+[
+    {
+        "heading": "Fullstack developer",
+        "content": [
+            {
+                "timeline": "2021-2022",
+                "description": "I have completed the Full Stack Web Development (MERN), course at Zen classes, GUVI geek networks, IITM Research Park. Now I am certified Full Stack Developer, ready to explore the new phase of my career."
+            }
+        ]
+    },
+    {
+        "heading": "Graduation",
+        "content": [
+            {
+                "timeline": "2017-2021",
+                "description": "I Engineering graduate in Electronics and Telecommunication under Savitribai Phule Pune University"
+            }
+        ]
+    },
+    {
+        "heading": "Skills",
+        "content": [
+            {
+                "timeline": "Known languages",
+                "description": "HTML, CSS, JavaScript, Python, C, C++, Kotlin, Java, etc."
+            },
+            {
+                "timeline": "Frameworks",
+                "description": "ReactJS, NodeJS, ExpressJS, Bootstrap, Material Design Bootstrap, Material Ui, etc."
+            },
+            {
+                "timeline": "Database",
+                "description": "MongoDB, MySql, etc."
+            },
+            {
+                "timeline": "Tools",
+                "description": "GitHub, Git Bash, Netlify, Heroku, Visual Studio Code, Postman, AWS, Adobe Photoshop, Canva, etc."
+            },
+            {
+                "timeline": "Others known",
+                "description": "OOP, Microsoft Office, Matlab, Android Studio, Google Sheets, Atmel Studio, etc."
+            }
+        ]
+    }
+]

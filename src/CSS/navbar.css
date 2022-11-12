@@ -1,0 +1,190 @@
+.navbar_section {
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    top: 0;
+    left: 0;
+    background: var(--theme);
+    box-shadow: 0 2px 20px #0000084b;
+    transition: all 0.05s ease-in-out;
+    z-index: 1000;
+}
+
+#navbar_section.active {
+    background: #ffffff1a;
+    box-shadow: 0 2px 20px #0000084b;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    transition: all 0.35s ease;
+    height: 65px;
+}
+
+.navbar_logo {
+    flex: 1;
+    height: 100%;
+    padding: 0 30px;
+}
+
+.nav_logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.navbar_tabs {
+    width: 50%;
+    height: 100%;
+    font-weight: 500;
+}
+
+.nav_tabs {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.indicator {
+    position: absolute;
+    height: 4px;
+    background: var(--color);
+    bottom: 16px;
+    transition: 0.4s ease-in;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px var(--color);
+}
+
+.nav_tab .link {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--text);
+    font-size: 2rem;
+}
+
+#navbar_section.active ~ .nav_tab .link {
+    stroke: 1px solid rgb(196, 4, 4);
+}
+
+.nav_tab .link:hover {
+    color: var(--color);
+    font-weight: 500;
+}
+
+.theme_icon {
+    color: var(--theme-icon);
+    filter: drop-shadow(0px 0px 10px var(--theme-icon));
+    transition: all 1s ease-in;
+}
+
+#theme_icon {
+    font-size: 2rem;
+}
+
+.navbar_menu {
+    display: none;
+}
+
+/*^----------------------------> MENU <----------------------------^*/
+
+.navbar_menu {
+    width: 20%;
+}
+
+.menu_icon {
+    position: relative;
+    color: var(--color);
+    z-index: 510;
+    transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 0.55);
+    transform: rotate(0deg);
+    cursor: pointer;
+    top: 0px;
+    right: 0px;
+}
+
+.menu_icon > sup {
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 2.8s ease-in;
+    font-size: 1rem;
+    color: var(--color);
+}
+
+
+.navbar_menu.active .menu_icon > sup {
+    opacity: 0;
+    transition: 0.1s ease-out;
+    color: var(--color);
+}
+
+.navbar_menu.active .menu_icon {
+    color: var(--theme);
+    transform: rotate(-135deg);
+    top: 15px;
+    right: 15px;
+}
+
+.navbar_menu .menu_icon > #menu_icon_add, .link > svg {
+    font-size: 3rem;
+}
+
+.navbar_menu.active .menu_icon #menu_icon_add {
+    font-size: 4rem;
+}
+
+.navbar_menu .menu_tabs {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    transform: translateY(-1500px);
+    transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: 500;
+    width: 100%;
+    height: 100vh;
+    background: var(--color);
+    gap:20px;
+}
+
+.navbar_menu.active .menu_tabs {
+    transform: translateY(0px);
+}
+
+.menu_tab {
+    width: 100%;
+    height: 50px;
+}
+
+.menu_tab > div {
+    width: 150px;
+    color: var(--theme);
+    gap: 10px;
+}
+
+.menu_tab > div > span {
+    font: 600 2.5rem Montserrat;
+}
+
+/*^----------------------------> MEDIA QUERY <----------------------------^*/
+
+@media (max-width: 768px) {
+    .navbar_section {
+        height: 60px;
+    }
+
+    #navbar_section.active {
+        height: 55px;
+    }
+
+    .navbar_tabs {
+        display: none;
+    }
+
+    .navbar_menu {
+        display: flex;
+    }
+
+    .nav_logo {
+        width: 38px;
+        height: 38px;
+    }
+}

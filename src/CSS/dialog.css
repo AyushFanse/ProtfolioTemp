@@ -1,0 +1,12 @@
+#viewLinkCard {
+    text-decoration: none;
+    background: var(--parrot);
+    border: 1.5px solid rgb(155, 149, 149);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5),
+        inset 0px 0px 15px #ffffff96;
+    border-radius: 8px;
+    color: #20221d;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 7px 10px;
+}   

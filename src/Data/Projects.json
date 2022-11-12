@@ -1,0 +1,64 @@
+[
+  {
+    "title": "TODO",
+    "date": "Sep 22 - Oct 22",
+    "files": [{ "path": "https://i.ibb.co/QFbMMMt/TODO-Page.png"}],
+    "skills": "JavaScript, ReactJS, NodeJS, ExpressJS, MongoDB, CSS, JSX, MUI, Bootstrap, Npm libraries, etc.",
+    "features": "Add new task, Mark as done and Remove task.",
+    "description": "A simple 'TODO' web application.",
+    "site_link": "https://todo-client-af.netlify.app/",
+    "frontend": "https://github.com/AyushFanse/TODO-Client",
+    "backend": "https://github.com/AyushFanse/TODO-Backend"
+  },
+  {
+    "title": "Memories",
+    "date": "Apr 22 - May 22",
+    "files": [{ "path": "https://i.ibb.co/N7gdGdd/Memorable-Memories-Page.png"}],
+    "skills": "JavaScript, ReactJS, NodeJS, ExpressJS, MongoDB, CSS, JSX, MUI, Bootstrap, Npm libraries, Cloudinary, etc.",
+    "features": "Download, Share, Preview, etc.",
+    "description": "A personal cloud storage to store your memorable photos.",
+    "site_link": "https://memorable-memories.netlify.app",
+    "frontend": "https://github.com/AyushFanse/Memories_Frontend",
+    "backend": "https://github.com/AyushFanse/Memories_Backend"
+  },
+  {
+    "title": "Weather Forecasting",
+    "date": "Mar 22 - Apr 22",
+    "files": [
+      { "path": "https://i.ibb.co/92nnyBD/Weather-Forecasting-Page.png" }
+    ],
+    "description": "A web application to show live weather updates of the set location.",
+    "skills": "JavaScript, ReactJS, NodeJS, ExpressJS, MongoDB, CSS, JSX, MUI, Bootstrap, Npm libraries, Weather APIs, etc.",
+    "features": "Search, Live weather forecasting, etc.",
+    "site_link": "https://live-weather-forecasting.netlify.app",
+    "frontend": "https://github.com/AyushFanse/WeatherFFront",
+    "backend": "https://github.com/AyushFanse/WeatherFBackEnd"
+  },
+  {
+    "title": "Mobo Shop",
+    "date": "Jan 22 - Mar 22",
+    "files": [{ "path": "https://i.ibb.co/ZJ1WtHZ/Moboshop.png" }],
+    "skills": "JavaScript, ReactJS, NodeJS, ExpressJS, MongoDB, CSS, JSX, MUI, Bootstrap, Npm libraries, Cloudinary, etc.",
+    "features": "Add to cart, Payment gateway (Razorpay), etc.",
+    "description": "An online platform to buy mobile phones.",
+    "site_link": "https://moboshop.netlify.app",
+    "frontend": "https://github.com/AyushFanse/E-commerce-MoboShop-Frontend",
+    "backend": "https://github.com/AyushFanse/E-commerce-MoboShop-Backend",
+    "admin": "https://github.com/AyushFanse/Mobo-Shop-Admin"
+  },
+  {
+    "title": "Recipes",
+    "date": "Dec 21 - Jan 22",
+    "files": [
+      { "path": "https://i.ibb.co/jWbBQPX/Recipes-1.png" },
+      { "path": "https://i.ibb.co/yg0X34V/Recipes-2.png" },
+      { "path": "https://i.ibb.co/0CtjHcC/Recipes-3.png" }
+    ],
+    "skills": "JavaScript, ReactJS, NodeJS, ExpressJS, MongoDB, CSS, JSX, MUI, Bootstrap, Npm libraries, Cloudinary, etc.",
+    "features": "Likes - Dislikes, Saved - Unsaved, Comment, etc.",
+    "description": "A social media website where users can share their recipes with others.",
+    "site_link": "https://recipes-webapplication.netlify.app",
+    "frontend": "https://github.com/AyushFanse/RECIPE-PROJECT",
+    "backend": "https://github.com/AyushFanse/RECIPE-Backend"
+  }
+]

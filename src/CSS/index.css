@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Luxurious+Roman&family=Montserrat:wght@600;700;800&display=swap&family=The+Nautigal:wght@700&display=swap');
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth;
+    }
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Montserrat;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+:root {
+    --color: rgb(195, 255, 0);
+    --theme: #090a05;
+    --theme-icon: #ffaa00;
+    --text: #fff;
+}
+
+::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+    margin: block;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--theme);
+}
+
+::-webkit-scrollbar-thumb {
+    border: 2px solid var(--theme);
+    background: linear-gradient(180deg, var(--text) 0%, var(--color) 100%);
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, var(--text) 0%, var(--color) 100%);
+}
+
+#root {
+    background: var(--theme);
+    color: var(--text);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex.jc {
+    justify-content: center;
+}
+
+.flex.je {
+    justify-content: flex-end;
+}
+
+.flex.js {
+    justify-content: flex-start;
+}
+
+.flex.jsb {
+    justify-content: space-between;
+}
+
+.flex.jse {
+    justify-content: space-evenly;
+}
+
+.flex.jsa {
+    justify-content: space-around;
+}
+
+.flex.as {
+    align-items: flex-start;
+}
+
+.flex.ae {
+    align-items: flex-end;
+}
+
+.flex.ac {
+    align-items: center;
+}
+
+.flex.row {
+    flex-direction: row;
+}
+
+.flex.col {
+    flex-direction: column;
+}
+
+.tl {
+    text-align: left;
+}
+
+.tc {
+    text-align: center;
+}
+
+.tr {
+    text-align: right;
+}
+
+.tj {
+    text-align: justify;
+}
+
+.ts {
+    text-align: start;
+}
+
+.te {
+    text-align: end;
+}
+
+.icon {
+    font-size: 2rem;
+    padding: 7.8px 8px;
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.Timeline_underline {
+    width: fit-content;
+    background-image: linear-gradient(var(--color), var(--color));
+    background-size: 0 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: all 0.5s ease-in-out;
+    padding: 10px 0;
+}
+
+.Timeline_underline:hover {
+    background-size: 100% 3px;
+}
+
+/*^===================> Popups <===================^*/
+
+#snakebar > div > div > button > svg{
+    font-size: 1.7rem;
+}
+
+#snakebar > div {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .Timeline_underline {
+        background-size: 100% 3px;
+    }
+}

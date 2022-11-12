@@ -1,0 +1,23 @@
+{
+    "short_name": "Portfolio",
+    "name": "Portfolio PWA",
+    "icons": [
+        {
+            "src": "./img/logo.png",
+            "sizes": "144x144",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "./img/logo.png",
+            "sizes": "1024x1024",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "prefer_related_applications": true,
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#c3ff00",
+    "background_color": "#27262b"
+}

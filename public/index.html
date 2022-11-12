@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/png" href="./img/logo.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Modern PWA Website application" />
+        <meta name="theme-color" content="#27262b" />
+        <link rel="apple-touch-icon" href="./img/logo.png" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="manifest" href="./manifest.json" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+        <title>Ayush Fanse</title>
+    </head>
+    <body>
+        <div class="site" id="root"></div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({ offset: 20, delay: 150 });
+        </script>
+        <script>
+            if ("serviceWorker" in navigator) {
+                window.addEventListener("load", () => {
+                    navigator.serviceWorker
+                        .register("./ServiceWorker.js")
+                        .then((reg) => console.info("Server is Online"))
+                        .catch((err) => console.info("Server is Offline"));
+                });
+            }
+        </script>
+    </body>
+</html>

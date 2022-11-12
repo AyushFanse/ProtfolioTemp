@@ -1,0 +1,91 @@
+.cls-1 {
+    fill: #fff;
+}
+
+.cls-2 {
+    fill: #2b2b28;
+}
+
+.cls-3 {
+    fill: #474743;
+}
+
+.ghost > .four {
+    animation: float 3s -5s ease-in-out infinite backwards;
+}
+.ghost > .six {
+    animation: float 3s -3s ease-in-out infinite backwards;
+}
+@keyframes float {
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.Error_Container {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+
+    background: rgb(19, 24, 17);
+    background: radial-gradient(
+        circle,
+        rgba(19, 24, 17, 1) 50%,
+        rgba(0, 0, 0, 1) 100%
+    );
+    overflow: hidden;
+}
+
+.grave {
+    height: 200px;
+    width: 150px;
+    background-color: #666;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+.grave > span {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 5em;
+    margin-top: 5rem;
+    letter-spacing: 3px;
+    font-family: "Ravenscroft";
+}
+
+.ghost {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.hide {
+    display: none;
+}
+
+#Objects {
+    width: 60%;
+    display: none;
+}
+.boo {
+    font-size: 12rem;
+    margin: auto;
+}
+
+#AuthButton {
+    margin: 22px 0px;
+    padding: 6px 25px;
+    border: none;
+    box-shadow: 1px 1px 10px var(--color);
+    border-radius: 25px;
+    background: var(--color);
+    color: var(--theme);
+    text-align: center;
+    font-size: 1rem;
+}

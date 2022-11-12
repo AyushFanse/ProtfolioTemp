@@ -1,0 +1,21 @@
+.footer_container {
+    height: 5vh;
+    background: #ffffff1a;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    padding: 20px;
+}
+
+.footer_content {
+    width: 100%;
+    height: 100%;
+}
+
+.footer_content > div {
+    width: 33.33%;
+    height: 100%;
+}
+
+.copy {
+    font-size: 1.2rem;
+}

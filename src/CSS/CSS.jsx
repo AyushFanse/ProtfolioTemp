@@ -1,0 +1,12 @@
+import './about.css';
+import './common.css';
+import './skills.css';
+import './home.css';
+import './error.css';
+import './index.css';
+import './contact.css';
+import './dialog.css';
+import './footer.css';
+import './navbar.css';
+import './projects.css';
+import './website.css';
