@@ -41,7 +41,9 @@ const NavIcons = () => {
                 <div>
                     <ConnectWithoutContact
                         id="icons"
-                        onClick={()=>{Redirect("Contact")}}
+                        onClick={() => {
+                            Redirect("Contact");
+                        }}
                     />
                 </div>
                 <h6 id="FooterName">Contact Me</h6>

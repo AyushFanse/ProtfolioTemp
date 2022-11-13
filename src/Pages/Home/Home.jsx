@@ -1,7 +1,8 @@
 import React from "react";
-import NavIcons from '../../Components/NavIcons/NavIcon';
+import { Redirect } from "../../Components/Common/Functions";
 
 const Home = () => {
+    
     return (
         <>
             <section className="home_container flex jc col" id="Home">
@@ -15,16 +16,20 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="home_container_inner">
-                    <h4>Hello, my name is</h4>
                     <h1>
                         Ayush <span>Fanse</span>
                     </h1>
                     <h3>
-                        I am a <span>Full Stack Web Developer</span>
+                        Full Stack
+                        <span> Web </span>
+                        Developer
                     </h3>
-                </div>
-                <div className='nav_icons'>
-                <NavIcons/>
+                    <div className="home_button flex jc ac row">
+                        <div className="home_button_inner">
+                            <button>Resume</button>
+                            <button onClick={()=>{Redirect("Contact")}}>Contact</button>
+                        </div>
+                    </div>
                 </div>
             </section>
         </>

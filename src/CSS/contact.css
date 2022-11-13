@@ -98,7 +98,7 @@
 
 .input_out .input:focus,
 .input_out > textarea:focus{
-    border-bottom: 2px solid #f6112f;
+    border-bottom: 4px solid #f6112f;
 }
 
 .input_out .input:valid ~ .contactErrorMess{
@@ -107,7 +107,7 @@
 
 .input_out .input:valid ,
 .input_out > textarea:valid {
-    border-bottom: 2px solid var(--color);
+    border-bottom: 2px solid lawngreen;
 }
 
 .input_out > textarea {

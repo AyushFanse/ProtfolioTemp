@@ -1,5 +1,6 @@
 .footer_container {
-    height: 5vh;
+    height: auto;
+    min-height: 5vh;
     background: #ffffff1a;
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);

@@ -59,8 +59,8 @@
     border-image-width: 2px;
     border-image-source: conic-gradient(
         from var(--deg),
-        hsla(calc(var(--hue) + 180), 100%, 75%, 0) 33%,
-        hsla(calc(var(--hue) + 180), 100%, 75%, 0.5) 66%,
+        hsla(calc(var(--hue) + 180), 100%, 50%, 0) 33%,
+        hsla(calc(var(--hue) + 300), 100%, 50%, 0.5) 66%,
         hsla(calc(var(--hue) + 360), 100%, 60%, 1) 100%
     );
     width: 34.5vh;
@@ -109,26 +109,54 @@
     padding: 0;
     letter-spacing: 2px;
 }
-.home_container_inner > h4 {
-    font-size: 2.8rem;
-}
 
 .home_container_inner > h1 {
-    font-size: 9rem;
-    text-shadow: 3px 3px 1px var(--color);
+    font-size: 10rem;
+    font-weight: 600;
+    font-family: Philosopher, Montserrat, cursive;
 }
 
 .home_container_inner > h1 > span {
     color: var(--color);
-    text-shadow: 3px 3px 1px rgb(104 104 104);
 }
 
 .home_container_inner > h3 {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
+    margin-top: 25px;
+    font-family: comfortaa, Philosopher, Montserrat, cursive;
 }
 
 .home_container_inner > h3 > span {
     color: var(--color);
+}
+
+.home_button{
+    padding-top: 60px;
+}
+
+.home_button_inner{
+    background: var(--text); 
+    width:fit-content;
+    border-radius: 30px;
+}
+.home_button_inner > button{
+    border:none;
+    gap:20px;
+    padding: 15px 12vw;
+    font-size: 2rem;
+    border-radius: 30px;
+    border: 4px solid var(--text);
+    cursor:pointer;
+}
+
+.home_button_inner > button:nth-child(1){
+    background: var(--text); 
+    color: var(--theme); 
+}
+
+.home_button_inner > button:nth-child(2){
+    background: var(--color); 
+    color: var(--text);
 }
 
 /*^----------------------------> MEDIA QUERY <----------------------------^*/
@@ -144,7 +172,7 @@
         height: 100%;
         min-height: -moz-fit-content;
         min-height: fit-content;
-        padding: 20vw 0;
+        padding: 5vw 0 20vw 0;
     }
 
     .box1,
@@ -152,27 +180,15 @@
         width: 17vh;
         height: 30vh;
     }
-
-    .home_container_inner {
-        /* padding-top: 35vh; */
-    }
-
-    .home_container_inner > h4 {
-        font-size: 5.2vw;
+    .home_container_inner > * {
+        text-align: center;
     }
 
     .home_container_inner > h1 {
-        font-size: 11.9vw;
+        font-size: 15vw;
     }
 
     .home_container_inner > h3 {
         font-size: 5.2vw;
-        text-align: center;
-        line-height: 50px;
-    }
-
-    .home_container_inner > h3 > span {
-        color: var(--color);
-        display: inline-block;
     }
 }

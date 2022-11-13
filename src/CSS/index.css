@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Luxurious+Roman&family=Montserrat:wght@600;700;800&display=swap&family=The+Nautigal:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Comfortaa:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap");
+
 @media (prefers-reduced-motion: no-preference) {
     :root {
         scroll-behavior: smooth;
@@ -10,9 +11,8 @@
 }
 
 :root {
-    --color: rgb(195, 255, 0);
+    --color: rgb(255 0 20);
     --theme: #090a05;
-    --theme-icon: #ffaa00;
     --text: #fff;
 }
 
@@ -28,12 +28,12 @@
 
 ::-webkit-scrollbar-thumb {
     border: 2px solid var(--theme);
-    background: linear-gradient(180deg, var(--text) 0%, var(--color) 100%);
+    background: var(--color);
     border-radius: 25px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, var(--text) 0%, var(--color) 100%);
+    background: var(--color);
 }
 
 html,
@@ -163,7 +163,7 @@ li {
 
 /*^===================> Popups <===================^*/
 
-#snakebar > div > div > button > svg{
+#snakebar > div > div > button > svg {
     font-size: 1.7rem;
 }
 

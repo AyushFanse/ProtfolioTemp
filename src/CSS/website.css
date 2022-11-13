@@ -38,7 +38,7 @@
 /*~===========> Loader <============~*/
 
 :root {
-    --loader_hue: 74;
+    --loader_hue: 355;
     --fg: hsl(var(--loader_hue), 100%, 50%);
 }
 
@@ -61,6 +61,7 @@
     top:70%;
     overflow: hidden;
     font-style: oblique;
+    color: var(--color);
 }
 
 .LoaderHeading:before{
@@ -104,12 +105,13 @@
     }
 }
 
-@media (min-width:789px){
+@media (min-height:629px){
     .pl {
         width: 8em;
         height: 8em;
     }
 }
+
 
 /* Animations */
 @keyframes bump {

@@ -52,11 +52,11 @@ const Website = () => {
                             >
                                 <stop
                                     offset="30%"
-                                    stopColor="hsl(74,100%,50%)"
+                                    stopColor="hsl(355,100%,50%)"
                                 />
                                 <stop
                                     offset="100%"
-                                    stopColor="hsl(200,90%,55%)"
+                                    stopColor="hsl(59,100%,50%)"
                                 />
                             </linearGradient>
                         </defs>
@@ -66,7 +66,7 @@ const Website = () => {
                             cx="64"
                             cy="64"
                             fill="none"
-                            stroke="hsla(0,10%,10%,0.1)"
+                            stroke="hsla(355,10%,10%,0.1)"
                             strokeWidth="16"
                             strokeLinecap="round"
                         />

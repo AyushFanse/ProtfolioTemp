@@ -25,12 +25,6 @@
     padding: 0 30px;
 }
 
-.nav_logo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
 .navbar_tabs {
     width: 50%;
     height: 100%;
@@ -69,16 +63,6 @@
     font-weight: 500;
 }
 
-.theme_icon {
-    color: var(--theme-icon);
-    filter: drop-shadow(0px 0px 10px var(--theme-icon));
-    transition: all 1s ease-in;
-}
-
-#theme_icon {
-    font-size: 2rem;
-}
-
 .navbar_menu {
     display: none;
 }
@@ -88,36 +72,6 @@
 .navbar_menu {
     width: 20%;
 }
-
-/* .menu_icon {
-    position: relative;
-    color: var(--color);
-    z-index: 510;
-    transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 0.55);
-    transform: rotate(0deg);
-    cursor: pointer;
-    top: 0px;
-    right: 0px;
-} */
-
-/* .menu_icon > sup {
-    opacity: 1;
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    transition: 2.8s ease-in;
-    font-size: 1rem;
-    color: var(--color);
-}
-
-
-.navbar_menu.active .menu_icon > sup {
-    opacity: 0;
-    transition: 0.1s ease-out;
-    color: var(--color);
-} */
-
-
 
 .menu_icon {
     width: 30px;
@@ -165,7 +119,7 @@
 }
 
 .menu_icon.active span {
-    background-color: var(--theme);
+    background-color: var(--color);
 }
 .menu_icon.active span:nth-child(1) {
     transform: rotate(45deg);
@@ -181,7 +135,6 @@
 
 
 .navbar_menu.active .menu_icon {
-    color: var(--theme);
     transform: rotate(-180deg);
     top: 25px;
     right: 20px;
@@ -191,6 +144,7 @@
 
 .navbar_menu .menu_icon > #menu_icon_add, .link > svg {
     font-size: 3rem;
+    color: var(--color);
 }
 
 .navbar_menu.active .menu_icon #menu_icon_add {
@@ -206,7 +160,7 @@
     z-index: 500;
     width: 100%;
     height: 100vh;
-    background: var(--color);
+    background: var(--theme);
     gap:20px;
 }
 
@@ -221,7 +175,6 @@
 
 .menu_tab > div {
     width: 40vw;
-    color: var(--theme);
     gap: 10px;
 }
 
@@ -246,10 +199,5 @@
 
     .navbar_menu {
         display: flex;
-    }
-
-    .nav_logo {
-        width: 38px;
-        height: 38px;
     }
 }

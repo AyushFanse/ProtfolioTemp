@@ -24,9 +24,7 @@ const Navbar = () => {
 
     return (
         <div className="navbar_section flex jsb ac" id="navbar_section">
-            <div className="navbar_logo flex ac">
-                <img className="nav_logo" src="./img/logo.png" alt="" />
-            </div>
+            <div className="navbar_logo flex ac"></div>
             <div className="navbar_tabs flex je ac">
                 <ul className="nav_tabs flex jse ac row">
                     <li
