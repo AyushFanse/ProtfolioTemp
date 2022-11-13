@@ -43,8 +43,6 @@ export const navbarScrollIndicator = () => {
             indicator = "contactnav";
         }
 
-        console.log($(`#${indicator}`)[0]);
-
         $(".nav_tab").each((nav) => {
             $(`#${nav}`).removeClass("active");
         });
@@ -67,7 +65,6 @@ export const NavbarIndicator = () => {
                 $(this).removeClass("active");
             });
             $(this).addClass("active");
-            Indicator($(this)[0]);
             Redirect($(this).text());
         });
     });
@@ -103,6 +100,7 @@ export const Redirect = (value) => {
 
 export const Menu = () => {
     $(".navbar_menu").toggleClass("active");
+    $(".menu_icon").toggleClass("active");
 };
 
 export const Indicator = (e) => {

@@ -7,8 +7,8 @@
 }
 
 .skills_container_inner {
-    height:100%;
-    min-height: 80vh;
+    height:100%;  
+    padding: 100px 0;
 }
 
 .tag-list {

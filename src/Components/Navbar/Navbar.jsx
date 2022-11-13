@@ -7,7 +7,7 @@ import {
     navbarScrollIndicator,
     menuNavbarIndicator,
 } from "../../Components/Common/Functions";
-import { AddSharp, ConnectWithoutContact } from "@mui/icons-material";
+import { ConnectWithoutContact } from "@mui/icons-material";
 import { GiSkills } from "react-icons/gi";
 import { RiHome3Line } from "react-icons/ri";
 import { BiCategoryAlt } from "react-icons/bi";
@@ -54,8 +54,9 @@ const Navbar = () => {
             <div className="navbar_menu  flex jc ac">
                 <div className="nav_menu">
                     <div className="menu_icon" onClick={Menu}>
-                        <AddSharp id="menu_icon_add" />
-                        <sup>Menu</sup>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
                     <ul id="menu" className="menu_tabs flex jc ac col">
                         <li className="menu_tab flex jc ac">

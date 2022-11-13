@@ -1,6 +1,7 @@
 import React, { memo } from "react";
 
 const Footer = memo(() => {
+
     return (
         <>
             <div className="footer_container flex jc ac col" id="Contact">

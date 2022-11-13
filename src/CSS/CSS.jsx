@@ -10,3 +10,4 @@ import './footer.css';
 import './navbar.css';
 import './projects.css';
 import './website.css';
+import './homeIcons.css'

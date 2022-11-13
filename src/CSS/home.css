@@ -1,8 +1,7 @@
 .home_container {
-    margin-top: 70px;
     padding: 0 50px;
-    height: calc(100vh - 70px);
-    gap: 30px;
+    height: auto;
+    min-height: 100vh;
     z-index: 50;
 }
 @property --hue {
@@ -20,13 +19,14 @@
 .parentAnim {
     display: grid;
     place-items: center;
+    height: auto;
     min-height: 100vh;
     position: absolute;
-    left: 33%;
+    right: 0;
     top: 0;
-    z-index: 1;
+    z-index: 1 !important;
     overflow: hidden;
-    width:99%;
+    width: 67vh;
 }
 
 @-webkit-keyframes rotate {
@@ -102,28 +102,33 @@
     transform: translate(-50%, -50%) scaleX(-1);
 }
 .home_container > * {
-    margin:0;
-    padding:0;
+    z-index: 20;
+}
+.home_container_inner > * {
+    margin: 0;
+    padding: 0;
     letter-spacing: 2px;
 }
-.home_container > h4 {
+.home_container_inner > h4 {
     font-size: 2.8rem;
 }
 
-.home_container > h1 {
+.home_container_inner > h1 {
     font-size: 9rem;
+    text-shadow: 3px 3px 1px var(--color);
 }
 
-.home_container > h1 > span {
-    color:var(--color);
+.home_container_inner > h1 > span {
+    color: var(--color);
+    text-shadow: 3px 3px 1px rgb(104 104 104);
 }
 
-.home_container > h3 {
-    font-size: 2.8rem;    
+.home_container_inner > h3 {
+    font-size: 2.8rem;
 }
 
-.home_container > h3 > span {
-    color:var(--color);
+.home_container_inner > h3 > span {
+    color: var(--color);
 }
 
 /*^----------------------------> MEDIA QUERY <----------------------------^*/
@@ -133,41 +138,40 @@
         padding: 0 20px;
     }
 
-    .home_container {
-        margin-top: 60px;
-        min-height: calc(100vh - 60px);
-    }
-
     .parentAnim {
-        left: 50%;
-        top: 50%;
-        transform: translateY(-65%) translateX(-50%);
+        width: 100%;
+        position: relative;
+        height: 100%;
+        min-height: -moz-fit-content;
+        min-height: fit-content;
+        padding: 20vw 0;
     }
 
     .box1,
     .box {
-        width: 22vh;
-        height: 38vh;
+        width: 17vh;
+        height: 30vh;
     }
 
-    .home_container > h4 {
-        padding-top: 45vh;
-        font-size: 5.8vw;
+    .home_container_inner {
+        /* padding-top: 35vh; */
     }
 
-    .home_container > h1 {
-        font-size: 12.9vw;
-        margin-top: -3vh;
+    .home_container_inner > h4 {
+        font-size: 5.2vw;
     }
 
-    .home_container > h3 {
-        font-size: 5.6vw;
-        margin-top: -2vh;
+    .home_container_inner > h1 {
+        font-size: 11.9vw;
+    }
+
+    .home_container_inner > h3 {
+        font-size: 5.2vw;
         text-align: center;
         line-height: 50px;
     }
 
-    .home_container > h3 > span {
+    .home_container_inner > h3 > span {
         color: var(--color);
         display: inline-block;
     }

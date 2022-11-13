@@ -9,20 +9,6 @@
     font-size: 62.5%;
 }
 
-html,
-body {
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    margin: 0;
-    font-family: Montserrat;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;
-}
-
 :root {
     --color: rgb(195, 255, 0);
     --theme: #090a05;
@@ -48,6 +34,21 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(180deg, var(--text) 0%, var(--color) 100%);
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Montserrat;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    background: var(--theme);
 }
 
 #root {

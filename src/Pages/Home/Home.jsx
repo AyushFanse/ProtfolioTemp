@@ -1,4 +1,5 @@
 import React from "react";
+import NavIcons from '../../Components/NavIcons/NavIcon';
 
 const Home = () => {
     return (
@@ -13,14 +14,18 @@ const Home = () => {
                         <div className="box box6"></div>
                     </div>
                 </div>
-
-                <h4>Hello, my name is</h4>
-                <h1>
-                    Ayush <span>Fanse</span>
-                </h1>
-                <h3>
-                I am a <span>Full Stack Web Developer</span>
-                </h3>
+                <div className="home_container_inner">
+                    <h4>Hello, my name is</h4>
+                    <h1>
+                        Ayush <span>Fanse</span>
+                    </h1>
+                    <h3>
+                        I am a <span>Full Stack Web Developer</span>
+                    </h3>
+                </div>
+                <div className='nav_icons'>
+                <NavIcons/>
+                </div>
             </section>
         </>
     );

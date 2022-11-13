@@ -18,7 +18,7 @@
     position: absolute;
     top: 20px;
     bottom: 0px;
-    left: 40px;
+    left: 7vw;
     width: 2px;
     content: "";
     background-color: #e9ecef;
@@ -56,8 +56,8 @@
     position: absolute;
     z-index: 100;
     left: 0;
-    width: 15vw;
-    height: 15vw;
+    width: 12.5vw;
+    height: 12.5vw;
     margin-left: 0;
     text-align: center;
     color: var(--text);
@@ -80,7 +80,8 @@
 
 .timeline > li .timeline-image > svg {
     margin: auto;
-    font-size: 6rem;
+    height: 100%;
+    width:100%;
 }
 
 .timeline > li:nth-child(even) > .timeline-panel:before {
@@ -119,7 +120,7 @@
 
 @media(max-width: 768px){
     .timeline > li .timeline-panel, .timeline > li .timeline-panel-last {
-        margin: 0px 0px 0px 23vw;
+        margin: 0px 0px 0px 20vw;
         flex-grow: 1;
         word-break: break-word;
     }
@@ -127,7 +128,7 @@
 
 @media (min-width: 768px) {
     .timeline:before {
-        left: 50%;
+        left: 48vw;
     }
 
     .timeline > li .timeline-panel {
@@ -138,12 +139,9 @@
     }
     .timeline > li .timeline-image {
         left: 50%;
-        width: 100px;
-        height: 100px;
-        margin-left: -57px;
-    }
-    .timeline > li .timeline-image > svg {
-        font-size: 9rem;
+        width: 8vw;
+        height: 8vw;
+        margin-left: -50px;
     }
     .timeline > li:nth-child(even) > .timeline-panel {
         float: right;
@@ -152,20 +150,11 @@
     }
 }
 
-@media (min-width: 850px) {
-    .timeline > li .timeline-image > svg {
-        font-size: 9.8rem;
-    }
-}
-
 @media (min-width: 992px) {
     .timeline > li .timeline-panel {
         padding: 0 0 20px 20px;
     }
 
-    .timeline > li .timeline-image > svg {
-        font-size: 10.5rem;
-    }
     .timeline > li:nth-child(even) > .timeline-panel {
         padding: 0 20px 20px;
     }

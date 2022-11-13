@@ -89,7 +89,7 @@
     width: 20%;
 }
 
-.menu_icon {
+/* .menu_icon {
     position: relative;
     color: var(--color);
     z-index: 510;
@@ -98,9 +98,9 @@
     cursor: pointer;
     top: 0px;
     right: 0px;
-}
+} */
 
-.menu_icon > sup {
+/* .menu_icon > sup {
     opacity: 1;
     position: absolute;
     left: 0;
@@ -115,13 +115,78 @@
     opacity: 0;
     transition: 0.1s ease-out;
     color: var(--color);
+} */
+
+
+
+.menu_icon {
+    width: 30px;
+    height: 25px;
+    margin: 10px 10px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    transform: rotate(0deg);
+    transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 0.55);
+    z-index: 510;
+    top: 0px;
+    right: 0px;
 }
+.menu_icon span {
+    background-color: var(--color);
+    position: absolute;
+    border-radius: 2px;
+    transition: 0.8s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+    width: 100%;
+    height: 4px;
+    transition-duration: 1000ms;
+}
+.menu_icon span:nth-child(1) {
+    top: 0px;
+    left: 0px;
+}
+.menu_icon span:nth-child(2) {
+    top: 10px;
+    left: 0px;
+    opacity: 1;
+}
+.menu_icon span:nth-child(3) {
+    bottom: 0px;
+    left: 0px;
+}
+.menu_icon:not(.active):hover span:nth-child(1) {
+    transform: rotate(-3deg) scaleY(1.1);
+}
+.menu_icon:not(.active):hover span:nth-child(2) {
+    transform: rotate(3deg) scaleY(1.1);
+}
+.menu_icon:not(.active):hover span:nth-child(3) {
+    transform: rotate(-4deg) scaleY(1.1);
+}
+
+.menu_icon.active span {
+    background-color: var(--theme);
+}
+.menu_icon.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 13px;
+}
+.menu_icon.active span:nth-child(2) {
+    opacity: 0;
+}
+.menu_icon.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 13px;
+}
+
 
 .navbar_menu.active .menu_icon {
     color: var(--theme);
-    transform: rotate(-135deg);
-    top: 15px;
-    right: 15px;
+    transform: rotate(-180deg);
+    top: 25px;
+    right: 20px;
+    width: 35px;
+    height: 30px;
 }
 
 .navbar_menu .menu_icon > #menu_icon_add, .link > svg {
