@@ -42,13 +42,7 @@ const About = () => {
                             <Add />
                         </div>
                         <div className="timeline-panel timeline-panel-last">
-                            <h4
-                                style={{
-                                    color: "var(--color)",
-                                    fontSize: "2.4rem",
-                                    margin: " 20px 0"
-                                }}
-                            >
+                            <h4>
                                 Be part of my story!
                             </h4>
                         </div>

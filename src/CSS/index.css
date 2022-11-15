@@ -11,9 +11,11 @@
 }
 
 :root {
-    --color: hsl(382 100% 50% / 1);
-    --theme: #000000;
-    --text: #fff;
+    /* --color: hsl(382 100% 50% / 1); */
+    --code:358;
+    --color: hsl(var(--code, 358), 81%, 49%);
+    --theme: hsl(0, 0%, 5%);
+    --text: hsl(0, 0%, 100%);
 }
 
 ::-webkit-scrollbar {

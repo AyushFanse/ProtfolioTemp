@@ -6,10 +6,24 @@ import {
     AlternateEmail,
 } from "@mui/icons-material";
 import MyData from "../../Data/ConnectMe_data.json";
+import { SiLeetcode } from "react-icons/si";
 
 const NavIcons = () => {
     return (
-        <ul className="flex jsb ac ">
+        <ul className="flex jse ac ">
+            <li className="flex jc ac col" data-aos="slide-up">
+                <div>
+                    <a
+                        className="links"
+                        rel="noreferrer"
+                        href={MyData[0].leetcode}
+                        target="_blank"
+                    >
+                        <SiLeetcode id="icons" />
+                    </a>
+                </div>
+                <h6 id="FooterName">LeetCode</h6>
+            </li>
             <li className="flex jc ac col" data-aos="slide-up">
                 <div>
                     <a
@@ -62,32 +76,32 @@ const NavIcons = () => {
                 </div>
                 <h6 id="FooterName">WhatsApp</h6>
             </li>
-        <li className="flex jc ac col" data-aos='slide-right' id='desktop'>
-          <div>
-            <a
-              className='links hover'
-              rel='noreferrer'
-              href={`https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${MyData[0].email}`}
-              target='_blank'
-            >
-              <AlternateEmail id='icons' />
-            </a>
-          </div>
-          <h6 id='FooterName'>Email</h6>
-        </li>
-        <li className="flex jc ac col" data-aos='slide-right' id='mobile'>
-          <div>
-            <a
-              className='links hover'
-              rel='noreferrer'
-              href={`mailto:${MyData[0].email}`}
-              target='_blank'
-            >
-              <AlternateEmail id='icons' />
-            </a>
-          </div>
-          <h6 id='FooterName'>Email</h6>
-        </li>
+            <li className="flex jc ac col" data-aos="slide-right" id="desktop">
+                <div>
+                    <a
+                        className="links hover"
+                        rel="noreferrer"
+                        href={`https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${MyData[0].email}`}
+                        target="_blank"
+                    >
+                        <AlternateEmail id="icons" />
+                    </a>
+                </div>
+                <h6 id="FooterName">Email</h6>
+            </li>
+            <li className="flex jc ac col" data-aos="slide-right" id="mobile">
+                <div>
+                    <a
+                        className="links hover"
+                        rel="noreferrer"
+                        href={`mailto:${MyData[0].email}`}
+                        target="_blank"
+                    >
+                        <AlternateEmail id="icons" />
+                    </a>
+                </div>
+                <h6 id="FooterName">Email</h6>
+            </li>
         </ul>
     );
 };

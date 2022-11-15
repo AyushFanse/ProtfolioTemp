@@ -78,6 +78,7 @@ const Contact = () => {
                     <form
                         ref={contactForm}
                         onSubmit={sendEmail}
+                        autoComplete="off"
                         className="contact_form_out flex col"
                     >
                         <div className="contact_form flex ac">

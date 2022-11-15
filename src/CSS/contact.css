@@ -119,6 +119,7 @@
     top: 15px;
     left: 0;
     letter-spacing: 1px;
+    font-family: Philosopher, Montserrat, cursive;
     z-index: 1;
 }
 
@@ -126,6 +127,7 @@
     display: inline-block;
     min-width: 5px;
     transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    font-weight: 700;
 }
 
 .input_out .input:focus + label > span,
@@ -195,19 +197,19 @@
         bottom: 70px;
     }
 
+    .contact_form_out {
+        justify-content: center;
+        padding: 4vh 0;
+    }
+    
     .contact_form {
         flex-direction: column;
         justify-content: center;
     }
 
-    .contact_form_out {
-        justify-content: center;
-        border-radius: 10px;
-    }
 
-    .contact_form > div {
-        margin: 40px auto;
-        padding: 20px 0;
+    .contact_form_out > button {
+        margin: 0px auto;
     }
 
     .input_container,

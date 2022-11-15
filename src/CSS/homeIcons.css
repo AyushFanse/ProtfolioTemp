@@ -3,7 +3,6 @@
     height: 100%;
     position: relative;
     margin: auto;
-    padding: 20px 20px 0;
 }
 
 .nav_icons > ul {
@@ -24,10 +23,10 @@
 .nav_icons ul li h6 {
     margin: 10px auto;
     text-transform: capitalize;
-    font-family: "Luxurious Roman", cursive;
+    font-family:  Philosopher, Montserrat, cursive;
     color: var(--text);
     letter-spacing: 0.075em;
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 #icons {
@@ -87,5 +86,9 @@
     #desktop {
         display: none;
         opacity: 0;
+    }
+    #FooterName {
+        font-size: 1.7rem;
+        letter-spacing: 0;
     }
 }
