@@ -130,33 +130,108 @@
     color: var(--color);
 }
 
-.home_button{
+.home_button {
     padding-top: 60px;
 }
 
-.home_button_inner{
-    background: var(--text); 
-    width:fit-content;
+.home_button_inner {
+    background: var(--text);
+    width: auto;
     border-radius: 30px;
 }
-.home_button_inner > button{
-    border:none;
-    gap:20px;
-    padding: 15px 12vw;
+
+.home_button_inner > * {
+    border: none;
+    gap: 20px;
+    padding: 8px 5vw;
     font-size: 2rem;
     border-radius: 30px;
-    border: 4px solid var(--text);
-    cursor:pointer;
+    cursor: pointer;
+    position: relative;
 }
 
-.home_button_inner > button:nth-child(1){
-    background: var(--text); 
-    color: var(--theme); 
+.home_button_inner > a {
+    background: var(--text);
+    color: var(--theme);
+    text-decoration: none;
 }
 
-.home_button_inner > button:nth-child(2){
-    background: var(--color); 
+.home_button_inner > button {
+    background: var(--color);
     color: var(--text);
+    border: 4px solid var(--text);
+    padding: 8px 6vw 8px 5vw;
+}
+
+svg.tea {
+    position: absolute;
+    top: -11px;
+    right: 2.5vw;
+    height: 42px;
+}
+#teabag {
+    transform-origin: top center;
+    transform: rotate(3deg);
+    animation: swing 2s infinite;
+}
+#steamL {
+    stroke-dasharray: 13;
+    stroke-dashoffset: 13;
+    animation: steamLarge 2s infinite;
+}
+#steamR {
+    stroke-dasharray: 9;
+    stroke-dashoffset: 9;
+    animation: steamSmall 2s infinite;
+}
+@keyframes swing {
+    50% {
+        transform: rotate(-3deg);
+    }
+}
+@keyframes steamLarge {
+    0% {
+        stroke-dashoffset: 13;
+        opacity: 0.9;
+    }
+    100% {
+        stroke-dashoffset: 39;
+        opacity: 0;
+    }
+}
+@keyframes steamSmall {
+    10% {
+        stroke-dashoffset: 9;
+        opacity: 0.9;
+    }
+    80% {
+        stroke-dashoffset: 27;
+        opacity: 0;
+    }
+    100% {
+        stroke-dashoffset: 27;
+        opacity: 0;
+    }
+}
+
+.home_button_inner > a > svg {
+    width: 116px;
+    height: 65px;
+    position: absolute;
+    left: 50%;
+    bottom: 4px;
+    transform: translate(-50%, 7px) translateZ(0);
+    fill: none;
+    stroke: var(--color);
+    stroke-linecap: round;
+    stroke-width: 2px;
+    stroke-dasharray: 69px 278px;
+    stroke-dashoffset: 361px;
+    transition: stroke 0.25s ease 0.1s, stroke-dasharray 0.35s;
+}
+
+.home_button_inner > a:hover > svg {
+    stroke-dasharray: 180px 278px;
 }
 
 /*^----------------------------> MEDIA QUERY <----------------------------^*/
@@ -190,5 +265,35 @@
 
     .home_container_inner > h3 {
         font-size: 5.2vw;
+    }
+    .home_button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .home_button_inner > * {
+        border: none;
+        font-size: 1.7rem;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
+    .home_button_inner > a {
+        margin-top: 3px;
+        padding: 8px 8vw;
+    }
+
+    .home_button_inner > button {
+        padding: 8px 14vw 8px 8vw;
+    }
+
+    svg.tea {
+        top: -6px;
+        right: 4.5vw;
+        height: 33px;
+    }
+
+    .home_button_inner > a > svg {
+        display: none;
     }
 }

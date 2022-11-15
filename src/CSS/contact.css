@@ -4,20 +4,19 @@
     width: 100%;
 }
 
-.contact_container > h1 {
-    margin: 0;
+.contact_container > div {
+    margin: 10px;
+    padding: 10px;
 }
 
 .contact_form_out {
     min-height: 80vh;
     height: auto;
-    width: calc(100% - 40px);
+    width: 100%;
     background: #ffffff1a;
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
     border-radius: 25px;
-    margin: 10px;
-    padding: 10px;
     flex-direction: row;
     justify-content: center;
 }
@@ -29,35 +28,35 @@
     justify-content: space-evenly;
 }
 
-.textarea_out{
+.textarea_out {
     padding-top: 15px;
-    width:50%;
+    width: 50%;
 }
 
-.textarea_out .input_out{
+.textarea_out .input_out {
     width: 100%;
 }
 
-.textarea_out .input_out .messCount{
-    display:block;
-    text-align:end;
-    margin:5px;
-    font-size:1rem
+.textarea_out .input_out .messCount {
+    display: block;
+    text-align: end;
+    margin: 5px;
+    font-size: 1rem;
 }
 
-.contactErrorMess{
-    position:absolute;
+.contactErrorMess {
+    position: absolute;
     font-weight: 700;
-    margin:1px 5px;
-    font-size:1rem;
+    margin: 1px 5px;
+    font-size: 1rem;
 }
 
-.input_out .input:not(:focus) ~ .contactErrorMess{
-    opacity: 0 ;
+.input_out .input:not(:focus) ~ .contactErrorMess {
+    opacity: 0;
 }
 
-#message{
-    width:100%;
+#message {
+    width: 100%;
 }
 
 /*^====================> Form <====================^*/
@@ -66,14 +65,14 @@
     display: block;
     position: relative;
     padding: 20px 0;
-    font-size: 1.5rem;
+    font-size: 2.2rem;
 }
 
 .textarea_out {
     display: block;
     position: relative;
     padding: 20px 0;
-    font-size: 1.5rem;
+    font-size: 2.2rem;
 }
 
 .input_out .input,
@@ -82,7 +81,7 @@
     position: relative;
     display: block;
     color: white;
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     padding: 5px 7px;
     letter-spacing: 1px;
     border: none;
@@ -91,21 +90,21 @@
     outline: 0;
 }
 
-.input_out .input:focus ~ .contactErrorMess{
+.input_out .input:focus ~ .contactErrorMess {
     color: #f6112f !important;
-    opacity: 1 ;
+    opacity: 1;
 }
 
 .input_out .input:focus,
-.input_out > textarea:focus{
+.input_out > textarea:focus {
     border-bottom: 4px solid #f6112f;
 }
 
-.input_out .input:valid ~ .contactErrorMess{
-    opacity: 0 ;
+.input_out .input:valid ~ .contactErrorMess {
+    opacity: 0;
 }
 
-.input_out .input:valid ,
+.input_out .input:valid,
 .input_out > textarea:valid {
     border-bottom: 2px solid lawngreen;
 }
@@ -132,52 +131,53 @@
 .input_out .input:focus + label > span,
 .input_out .input:not(:placeholder-shown) + label > span,
 .input_out > textarea:focus + label > span,
-.input_out > textarea:valid + label > span{
+.input_out > textarea:valid + label > span {
     color: var(--color);
     transform: translateY(-24px);
 }
 
-.contact_form_out > button  {
+.contact_form_out > button {
     width: 60%;
     margin: 20px auto;
     padding: 10px 20px;
-    font: 700 14px Montserrat;
+    font-size: 2rem;
+    font-weight: 700;
     border-radius: 5px;
     border: 1px solid transparent;
     box-shadow: 2px 2px 8px var(--theme);
     background: var(--color);
-    color: var(--theme);
+    color: var(--text);
     transition: all 0.1s ease-in-out;
-    cursor:grab;
+    cursor: grab;
     display: flex;
     gap: 8px;
     align-items: center;
     justify-content: center;
+    letter-spacing: 2px;
 }
 
-.contact_form_out > button > #submitIcon{
-    opacity:0 !important;
+.contact_form_out > button > #submitIcon {
+    opacity: 0 !important;
     transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transform: translateX(-100px);
-    margin-right:-30px;
+    margin-right: -30px;
 }
 
-.contact_form_out > button:hover > #submitIcon{
-    opacity:1 !important;
+.contact_form_out > button:hover > #submitIcon {
+    opacity: 1 !important;
     transform: translateX(0px);
-    margin-right:0px;
+    margin-right: 0px;
 }
 
-.contact_form_out > button:hover{
+.contact_form_out > button:hover {
     transform: scale(1.005);
     background: var(--theme);
-    color: var(--text);
     border-color: var(--color);
 }
 
 .contact_form_out > button:active {
     transform: scale(0.995);
-    cursor:grabbing;
+    cursor: grabbing;
 }
 
 @media (max-width: 768px) {
@@ -195,31 +195,34 @@
         bottom: 70px;
     }
 
-    .contact_form_out {
-        justify-content: center;
-        height: auto;
-        width: calc(100% - 20px);
-        border-radius: 10px;
-        margin: 40px auto;
-        padding: 20px 0;
-    }
-
-    .contact_form{
+    .contact_form {
         flex-direction: column;
         justify-content: center;
     }
 
-    .input_container, .textarea_out{
-        width:80%;
+    .contact_form_out {
+        justify-content: center;
+        border-radius: 10px;
     }
 
-    .input_out{
+    .contact_form > div {
+        margin: 40px auto;
+        padding: 20px 0;
+    }
+
+    .input_container,
+    .textarea_out {
+        width: 80%;
+    }
+
+    .input_out {
         width: 100%;
     }
-    
-    .input_out > input, #message{
-        width:94%;
-        max-width:94%;
-        min-width:94%;
+
+    .input_out > input,
+    #message {
+        width: 94%;
+        max-width: 94%;
+        min-width: 94%;
     }
 }

@@ -2,11 +2,10 @@ import React from "react";
 import {
     GitHub,
     LinkedIn,
-    Article,
-    ConnectWithoutContact,
+    WhatsApp,
+    AlternateEmail,
 } from "@mui/icons-material";
 import MyData from "../../Data/ConnectMe_data.json";
-import { Redirect } from "../../Components/Common/Functions";
 
 const NavIcons = () => {
     return (
@@ -37,31 +36,58 @@ const NavIcons = () => {
                 </div>
                 <h6 id="FooterName">LinkedIn</h6>
             </li>
-            <li className="flex jc ac col" data-aos="slide-up">
-                <div>
-                    <ConnectWithoutContact
-                        id="icons"
-                        onClick={() => {
-                            Redirect("Contact");
-                        }}
-                    />
-                </div>
-                <h6 id="FooterName">Contact Me</h6>
-            </li>
-            <li className="flex jc ac col" data-aos="slide-up">
+            <li className="flex jc ac col" data-aos="slide-right" id="desktop">
                 <div>
                     <a
                         className="links"
                         rel="noreferrer"
-                        download="Resume"
-                        href={MyData[0].resume}
+                        href={`https://wa.me/${MyData[0].number}`}
                         target="_blank"
                     >
-                        <Article id="icons" />
+                        <WhatsApp id="icons" />
                     </a>
                 </div>
-                <h6 id="FooterName">Resume</h6>
+                <h6 id="FooterName">WhatsApp</h6>
             </li>
+            <li className="flex jc ac col" data-aos="slide-right" id="mobile">
+                <div>
+                    <a
+                        className="links"
+                        rel="noreferrer"
+                        href={`https://api.whatsapp.com/send?phone=+91${MyData[0].number}`}
+                        target="_blank"
+                    >
+                        <WhatsApp id="icons" />
+                    </a>
+                </div>
+                <h6 id="FooterName">WhatsApp</h6>
+            </li>
+        <li className="flex jc ac col" data-aos='slide-right' id='desktop'>
+          <div>
+            <a
+              className='links hover'
+              rel='noreferrer'
+              href={`https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${MyData[0].email}`}
+              target='_blank'
+            >
+              <AlternateEmail id='icons' />
+            </a>
+          </div>
+          <h6 id='FooterName'>Email</h6>
+        </li>
+        <li className="flex jc ac col" data-aos='slide-right' id='mobile'>
+          <div>
+            <a
+              className='links hover'
+              rel='noreferrer'
+              href={`mailto:${MyData[0].email}`}
+              target='_blank'
+            >
+              <AlternateEmail id='icons' />
+            </a>
+          </div>
+          <h6 id='FooterName'>Email</h6>
+        </li>
         </ul>
     );
 };

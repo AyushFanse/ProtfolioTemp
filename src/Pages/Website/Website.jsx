@@ -52,11 +52,11 @@ const Website = () => {
                             >
                                 <stop
                                     offset="30%"
-                                    stopColor="hsl(355,100%,50%)"
+                                    stopColor="hsl(382,100%,50%)"
                                 />
                                 <stop
                                     offset="100%"
-                                    stopColor="hsl(59,100%,50%)"
+                                    stopColor="hsl(267,100%,50%)"
                                 />
                             </linearGradient>
                         </defs>

@@ -7,11 +7,11 @@
 }
 
 :root {
-    font-size: 62.5%;
+    font-size: 45.5%;
 }
 
 :root {
-    --color: rgb(255 0 20);
+    --color: hsl(382 100% 50% / 1);
     --theme: #000000;
     --text: #fff;
 }

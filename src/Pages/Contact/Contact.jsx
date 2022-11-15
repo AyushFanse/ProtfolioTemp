@@ -5,6 +5,7 @@ import { FormAnimation } from "../../Components/Common/Functions";
 import Popup from "../../Components/AlertPopups/Popup";
 import { CircularProgress } from "@mui/material";
 import { KeyboardBackspace } from "@mui/icons-material";
+import NavIcons from "../../Components/NavIcons/NavIcon";
 
 const Contact = () => {
     const contactForm = useRef();
@@ -71,10 +72,13 @@ const Contact = () => {
                     />
                 )}
                 <div>
+                    <div className="nav_icons flex jc ac row">
+                        <NavIcons />
+                    </div>
                     <form
                         ref={contactForm}
                         onSubmit={sendEmail}
-                        className="contact_form_out flex  col"
+                        className="contact_form_out flex col"
                     >
                         <div className="contact_form flex ac">
                             <div className="input_container flex jc ac col">
