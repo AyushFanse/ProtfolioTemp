@@ -5,14 +5,14 @@
     top: 0;
     left: 0;
     background: var(--theme);
-    box-shadow: 0 2px 20px #0000084b;
+    box-shadow: 0 2px 20px var(--theme);
     transition: all 0.05s ease-in-out;
     z-index: 1000;
 }
 
 #navbar_section.active {
-    background: #ffffff1a;
-    box-shadow: 0 2px 20px #0000084b;
+    background: hsla(var(--code), 0%, 100%, 0.102);
+    box-shadow: 0 2px 20px var(--theme);
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
     transition: all 0.35s ease;
@@ -55,7 +55,7 @@
 }
 
 #navbar_section.active ~ .nav_tab .link {
-    stroke: 1px solid rgb(196, 4, 4);
+    stroke: 1px solid var(--valid);
 }
 
 .nav_tab .link:hover {

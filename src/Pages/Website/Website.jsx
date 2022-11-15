@@ -50,10 +50,7 @@ const Website = () => {
                                 x2="0"
                                 y2="1"
                             >
-                                <stop
-                                    offset="30%"
-                                    stopColor="hsl(var(--code),100%,50%)"
-                                />
+                                <stop offset="30%" stopColor="var(--color)" />
                                 <stop
                                     offset="100%"
                                     stopColor="hsl(48,100%,50%)"
@@ -66,7 +63,7 @@ const Website = () => {
                             cx="64"
                             cy="64"
                             fill="none"
-                            stroke="hsla(355,10%,10%,0.1)"
+                            stroke="hsla(358,10%,10%,0.1)"
                             strokeWidth="16"
                             strokeLinecap="round"
                         />

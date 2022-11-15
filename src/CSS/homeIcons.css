@@ -32,16 +32,16 @@
 #icons {
     color: var(--color);
     font-size: 4rem;
-    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(4px 4px 5px hsla( var(--code), 0%, 0%, 0.3));
 }
 
 #Home_icons {
     color: var(--color);
-    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(4px 4px 5px hsla( var(--code), 0%, 0%, 0.3));
 }
 
 #FooterName {
-    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(4px 4px 5px hsla( var(--code), 0%, 0%, 0.3));
 }
 
 @media (min-width: 768px) {

@@ -38,7 +38,7 @@
 /*~===========> Loader <============~*/
 
 :root {
-    --loader_hue: 182;
+    --loader_hue: 0;
     --fg: hsl(var(--loader_hue), 100%, 50%);
 }
 

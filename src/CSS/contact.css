@@ -4,16 +4,21 @@
     width: 100%;
 }
 
-.contact_container > div {
-    margin: 10px 10px 0;
-    padding: 10px 10px 0;
+.contact_container > div:nth-child(1) {
+    margin: 10px;
+    padding: 10px;
+}
+
+.contact_container_inner {
+    margin: 0 10px 10px;
+    padding: 0 10px 10px;
 }
 
 .contact_form_out {
     min-height: 80vh;
     height: auto;
     width: 100%;
-    background: #ffffff1a;
+    background: hsla(var(--code), 0%, 100%, 0.102);
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
     border-radius: 25px;
@@ -80,7 +85,7 @@
     background: transparent;
     position: relative;
     display: block;
-    color: white;
+    color: var(--text);
     font-size: 2.2rem;
     padding: 5px 7px;
     letter-spacing: 1px;
@@ -91,13 +96,13 @@
 }
 
 .input_out .input:focus ~ .contactErrorMess {
-    color: #f6112f !important;
+    color: var(--invalid) !important;
     opacity: 1;
 }
 
 .input_out .input:focus,
 .input_out > textarea:focus {
-    border-bottom: 4px solid #f6112f;
+    border-bottom: 4px solid var(--invalid);
 }
 
 .input_out .input:valid ~ .contactErrorMess {
@@ -106,7 +111,7 @@
 
 .input_out .input:valid,
 .input_out > textarea:valid {
-    border-bottom: 2px solid lawngreen;
+    border-bottom: 2px solid var(--valid);
 }
 
 .input_out > textarea {
@@ -183,6 +188,11 @@
 }
 
 @media (max-width: 768px) {
+    .contact_container_inner {
+        margin: 10px 10px;
+        padding: 10px 10px;
+    }
+
     .input_form {
         --width: 200px;
     }

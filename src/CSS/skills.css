@@ -40,19 +40,19 @@
     display: flex;
     align-items: center;
     gap: 0 0.2rem;
-    color: #e2e8f0;
+    color: var(--text);
     font-size: 0.9rem;
-    background-color: #334155;
+    background-color: hsla(var(--code), 24%, 26%, 0.581);
     border-radius: 0.4rem;
     padding: 0.7rem 1rem;
     margin-right: 1rem;
-    box-shadow: 0 0.1rem 0.2rem rgb(0 0 0 / 20%),
-        0 0.1rem 0.5rem rgb(0 0 0 / 30%), 0 0.2rem 1.5rem rgb(0 0 0 / 40%);
+    box-shadow: 0 0.1rem 0.2rem hsla(var(--code), 0%, 0%, 0.2),
+        0 0.1rem 0.5rem hsla(var(--code), 0%, 0%, 0.3), 0 0.2rem 1.5rem hsla(var(--code), 0%, 0%, 0.4);
 }
 
 .tag > span {
     font-size: 1.2rem;
-    color: #64748b;
+    color: hsla(var(--code), 16%, 47%, 0.557);
 }
 
 .fade {
@@ -82,19 +82,19 @@
 }
 
 #skillIcons {
-    background: rgba(255, 255, 255, 0.1);
+    background: hsla(var(--code), 0%, 100%, 0.1);
     backdrop-filter: blur(10px);
     padding: 10px;
     border-radius: 10px;
-    filter: drop-shadow(2px 2px 6px rgb(0, 0, 0));
+    filter: drop-shadow(2px 2px 6px var(--theme));
 }
 
 #skillName {
     text-align: center;
     margin: 0;
-    color: rgb(255, 255, 255);
+    color: var(--text);
     font-family: "Montserrat";
-    filter: drop-shadow(2px 2px 10px rgb(0, 0, 0));
+    filter: drop-shadow(2px 2px 10px var(--theme));
     text-decoration: none;
 }
 
@@ -108,7 +108,7 @@
     }
 
     #skillIcons {
-        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+        box-shadow: 4px 4px 15px hsla(var(--code), 0%, 0%, 0.5);
     }
 
     #contSkills {
@@ -116,7 +116,7 @@
     }
 
     .glasscard {
-        background: rgb(249, 255, 229);
+        background: hsl(var(--code), 100%, 97%);
         box-shadow:0px 0px 60px var(--color);
     }
 
@@ -133,11 +133,11 @@
 
 @media (min-width: 768px) {
     #skillIcons {
-        box-shadow: 22px 22px 55px rgba(0, 0, 0, 0.5);
+        box-shadow: 22px 22px 55px var(--theme);
     }
 
     .glasscard {
-        background: #8d8d8d1a;
+        background: hsla(var(--code), 0%, 55%, 0.102);
     }
 }
 
@@ -173,7 +173,7 @@
 }
 
 .glasscard:hover {
-    background: rgb(249, 255, 229);
+    background: hsl(var(--code), 100%, 98%);
     box-shadow:0px 0px 60px var(--color);
 }
 

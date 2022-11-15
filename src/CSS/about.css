@@ -21,7 +21,7 @@
     left: 6vw;
     width: 2px;
     content: "";
-    background-color: #e9ecef;
+    background-color: var(--text);
 }
 
 .timeline > li {

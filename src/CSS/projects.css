@@ -64,7 +64,7 @@
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.205);
+    box-shadow: 1px 1px 20px hsla(var(--code), 0%, 0%, 0.205);
     overflow: hidden;
     -webkit-box-reflect: below 5px
         linear-gradient(
@@ -72,7 +72,7 @@
             transparent,
             transparent,
             transparent,
-            #0004
+            hsla(var(--code), 0%, 0%, 0.267)
         );
 }
 
@@ -104,8 +104,8 @@
     top: 0;
     background: linear-gradient(
         0deg,
-        var(--theme) 0%,
-        rgba(255, 255, 255, 0) 100%
+        hsl(var(--bcode), 0%, 0%) 0%,
+        hsla(var(--bcode), 0%, 100%, 0) 100%
     );
     transition: all 0.5s ease-in-out;
     transform: translateY(170px);
@@ -118,7 +118,7 @@
 }
 
 .Card .CardData {
-    color: #fff;
+    color: var(--text);
     position: absolute;
     top: 0;
     width: 100%;
@@ -150,7 +150,7 @@
     opacity: 0;
     width: 100%;
     transition: all 0.5s ease-in-out;
-    color: var(--parrot);
+    color: var(--text);
 }
 
 .Card .CardData .Navigation > h3 {

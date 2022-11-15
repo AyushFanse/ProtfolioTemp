@@ -71,7 +71,7 @@ const Contact = () => {
                         setWarning={setWarning}
                     />
                 )}
-                <div>
+                <div className="contact_container_inner">
                     <div className="nav_icons flex jc ac row">
                         <NavIcons />
                     </div>

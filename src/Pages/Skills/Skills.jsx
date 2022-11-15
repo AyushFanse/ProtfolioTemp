@@ -57,7 +57,7 @@ const Skills = () => (
                     ))}
                     <div className="fade" />
                 </div>
-                <div style={{margin:'auto'}}>
+                <div style={{ margin: "auto" }}>
                     <div className="glasscard">
                         <ul>
                             {SkillsData.map((tag, i) => (

@@ -1,7 +1,7 @@
 .footer_container {
     height: auto;
     min-height: 5vh;
-    background: #ffffff1a;
+    background: hsla(var(--code), 0%, 100%, 0.102);
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
     padding: 20px;
