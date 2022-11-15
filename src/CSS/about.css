@@ -23,6 +23,7 @@
     content: "";
     background-color: #e9ecef;
 }
+
 .timeline > li {
     position: relative;
     min-height: 50px;
@@ -114,7 +115,7 @@
 
 .timeline .timeline-panel .subheading {
     text-transform: none;
-    font-size: 2.3rem;
+    font-size: 2.7rem;
     color: var(--color);
     margin: 10px 0;
     font-family: Philosopher, Montserrat, cursive;

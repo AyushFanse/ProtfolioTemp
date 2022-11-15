@@ -12,7 +12,7 @@
             body {
                 height: 100%;
                 margin: 0;
-                background: #000;
+                background: hsl(0deg 0% 11%);
                 display: flex;
                 align-items: center;
                 text-align: center;
@@ -27,18 +27,32 @@
                 flex-direction: column;
                 padding: 40px 8%;
                 border-radius: 20px;
-                background: hsl(382 100% 50% / 1);
+                color: hsl(358deg 81% 49%);
             }
 
             .offline {
-                font-size: 2rem;
+                font-size: 6rem;
+            }
+
+            .offline > span {
+                animation: heartbeats 1s ease-in-out infinite;
+                animation-delay: calc(0.2s * var(--i));
+            }
+
+            @keyframes heartbeats {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
             }
         </style>
     </head>
     <body>
         <div class="offline_outer">
             <h2 class="offline">
-                <span>Please check your network connection.</span>
+                No Internat <span style="--i: 0">.</span><span style="--i: 1">.</span><span style="--i: 2">.</span><span style="--i: 3">.</span>
             </h2>
         </div>
     </body>

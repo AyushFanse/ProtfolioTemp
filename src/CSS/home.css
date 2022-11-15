@@ -117,7 +117,6 @@
 }
 
 .home_container_inner > h1 > span {
-    color: var(--color);
 }
 
 .home_container_inner > h3 {
@@ -128,6 +127,7 @@
 
 .home_container_inner > h3 > span {
     color: var(--color);
+    -webkit-text-stroke-width: 1px;
 }
 
 .home_button {
@@ -154,6 +154,7 @@
     background: var(--text);
     color: var(--theme);
     text-decoration: none;
+    font-weight: 700;
 }
 
 .home_button_inner > button {

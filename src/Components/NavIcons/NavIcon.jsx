@@ -1,12 +1,10 @@
 import React from "react";
-import {
-    GitHub,
-    LinkedIn,
-    WhatsApp,
-    AlternateEmail,
-} from "@mui/icons-material";
 import MyData from "../../Data/ConnectMe_data.json";
 import { SiLeetcode } from "react-icons/si";
+import { MdOutlineAlternateEmail } from "react-icons/md";
+import { VscGithub } from "react-icons/vsc";
+import { FaLinkedinIn } from "react-icons/fa";
+import { SiWhatsapp } from "react-icons/si";
 
 const NavIcons = () => {
     return (
@@ -32,7 +30,7 @@ const NavIcons = () => {
                         href={MyData[0].github}
                         target="_blank"
                     >
-                        <GitHub id="icons" />
+                        <VscGithub id="icons" />
                     </a>
                 </div>
                 <h6 id="FooterName">GitHub</h6>
@@ -45,7 +43,7 @@ const NavIcons = () => {
                         href={MyData[0].linked_in}
                         target="_blank"
                     >
-                        <LinkedIn id="icons" />
+                        <FaLinkedinIn id="icons" />
                     </a>
                 </div>
                 <h6 id="FooterName">LinkedIn</h6>
@@ -58,7 +56,7 @@ const NavIcons = () => {
                         href={`https://wa.me/${MyData[0].number}`}
                         target="_blank"
                     >
-                        <WhatsApp id="icons" />
+                        <SiWhatsapp id="icons" />
                     </a>
                 </div>
                 <h6 id="FooterName">WhatsApp</h6>
@@ -71,7 +69,7 @@ const NavIcons = () => {
                         href={`https://api.whatsapp.com/send?phone=+91${MyData[0].number}`}
                         target="_blank"
                     >
-                        <WhatsApp id="icons" />
+                        <SiWhatsapp id="icons" />
                     </a>
                 </div>
                 <h6 id="FooterName">WhatsApp</h6>
@@ -84,7 +82,7 @@ const NavIcons = () => {
                         href={`https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${MyData[0].email}`}
                         target="_blank"
                     >
-                        <AlternateEmail id="icons" />
+                        <MdOutlineAlternateEmail id="icons" />
                     </a>
                 </div>
                 <h6 id="FooterName">Email</h6>
@@ -97,7 +95,7 @@ const NavIcons = () => {
                         href={`mailto:${MyData[0].email}`}
                         target="_blank"
                     >
-                        <AlternateEmail id="icons" />
+                        <MdOutlineAlternateEmail id="icons" />
                     </a>
                 </div>
                 <h6 id="FooterName">Email</h6>
