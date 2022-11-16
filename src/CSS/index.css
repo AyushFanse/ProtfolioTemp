@@ -12,12 +12,19 @@
 
 :root {
     --code: 358;
-    --bcode:0;
+    --bcode: 0;
     --color: hsl(var(--code, 358), 81%, 49%);
     --theme: hsl(0deg 0% 11%);
     --text: hsl(0, 0%, 100%);
     --valid: rgb(31, 220, 56);
     --invalid: hsl(0, 100%, 50%);
+    --m-height: 100vh;
+}
+
+@media (max-height: 600px) {
+    :root {
+        --m-height: 600px;
+    }
 }
 
 ::-webkit-scrollbar {

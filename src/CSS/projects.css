@@ -1,6 +1,6 @@
 .projects_container {
     height: auto;
-    min-height: 100vh;
+    min-height: var(--m-height);
     width: 100%;
     background: transparent;
 }
@@ -57,6 +57,7 @@
 .right > svg,
 .left > svg {
     font-size: 10rem;
+    filter: drop-shadow(2px 2px 4px hsla( var(--code), 0%, 0%));
 }
 
 .CardOut {
@@ -239,7 +240,6 @@
         font-size: 2.8rem;
         margin: 10px 25px 20px 0px;
     }
-
 }
 
 @media (max-width: 550px) {
@@ -260,5 +260,11 @@
 
     .projects_container_inner {
         height: 50vh;
+    }
+}
+
+@media (max-height: 600px) {
+    .carousel {
+        width: 524px;
     }
 }

@@ -14,5 +14,5 @@
     color: var(--color);
     letter-spacing: 3px;
     text-transform: capitalize;
-    text-shadow: 1.5px 1.5px 3px hsla(var(--theme), 0%, 2%, 0.722);
+    filter: drop-shadow(2px 2px 3px hsla( var(--code), 0%, 0%, 1));
 }

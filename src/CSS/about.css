@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    min-height: 100vh;
+    min-height: var(--m-height);
     padding: 0 20px 50px;
 }
 
@@ -37,7 +37,8 @@
 .timeline > li:after {
     clear: both;
 }
-.timeline > li .timeline-panel, .timeline > li .timeline-panel-last {
+.timeline > li .timeline-panel,
+.timeline > li .timeline-panel-last {
     position: relative;
     text-align: left;
 }
@@ -69,19 +70,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.timeline > li .timeline-image > img {
-    object-fit: cover;
-    border-radius: 50%;
-    width: 100%;
-    height: auto;
+    filter: drop-shadow(2px 2px 4px hsla(var(--code), 0%, 0%));
+    box-shadow: inset 1.2px 1.2px 6px hsla(var(--code), 0%, 0%);
 }
 
 .timeline > li .timeline-image > svg {
     margin: auto;
     height: 100%;
-    width:100%;
+    width: 100%;
+    filter: drop-shadow(2px 2px 4px hsla(var(--code), 0%, 0%));
 }
 
 .timeline > li:nth-child(even) > .timeline-panel:before {
@@ -100,14 +97,19 @@
     margin-bottom: 0;
 }
 
-.timeline .timeline-panel > h4:nth-child(1){
+.timeline .timeline-panel > h4:nth-child(1) {
     font-size: 3rem;
     margin: 10px 0;
     text-transform: uppercase;
     font-family: Philosopher, Montserrat, cursive;
 }
 
-.timeline .timeline-panel-last > h4{
+.timeline .timeline-panel > * {
+    filter: drop-shadow(2px 2px 4px hsla(var(--code), 0%, 0%));
+    letter-spacing: 1px;
+}
+
+.timeline .timeline-panel-last > h4 {
     font-size: 3rem;
     margin-top: 15.5px !important;
     color: var(--color);
@@ -127,15 +129,16 @@
     font-size: 2.3rem;
 }
 
-@media(max-width: 768px){
-    .timeline > li .timeline-panel, .timeline > li .timeline-panel-last {
+@media (max-width: 768px) {
+    .timeline > li .timeline-panel,
+    .timeline > li .timeline-panel-last {
         margin: 0px 0px 0px 20vw;
         flex-grow: 1;
         word-break: break-word;
     }
 
     .timeline > li .timeline-panel-last {
-        margin-left:20vw;
+        margin-left: 20vw;
     }
 }
 

@@ -23,7 +23,7 @@
 }
 
 .Error_Container {
-    height: 100vh;
+    height: var(--m-height);
     margin: 0;
     display: grid;
     place-items: center;

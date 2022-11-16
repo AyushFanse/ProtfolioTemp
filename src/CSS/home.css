@@ -1,7 +1,7 @@
 .home_container {
     padding: 0 50px;
     height: auto;
-    min-height: 100vh;
+    min-height: var(--m-height);
     z-index: 50;
 }
 @property --hue {
@@ -20,7 +20,7 @@
     display: grid;
     place-items: center;
     height: auto;
-    min-height: 100vh;
+    min-height: var(--m-height);
     position: absolute;
     right: 0;
     top: 0;
@@ -108,12 +108,16 @@
     margin: 0;
     padding: 0;
     letter-spacing: 2px;
+    filter: drop-shadow(2px 2px 4px hsla( var(--code), 0%, 0%));
 }
 
 .home_container_inner > h1 {
     font-size: 10rem;
     font-weight: 600;
     font-family: Philosopher, Montserrat, cursive;
+}
+.home_container_inner > h1 > span {
+    color: var(--color);
 }
 
 .home_container_inner > h3 {
