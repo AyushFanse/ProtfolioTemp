@@ -15,7 +15,6 @@
 }
 
 .contact_form_out {
-    min-height: 80vh;
     height: auto;
     width: 100%;
     background: hsla(var(--code), 0%, 100%, 0.102);
@@ -24,6 +23,7 @@
     border-radius: 25px;
     flex-direction: row;
     justify-content: center;
+    padding: 7rem 0;
 }
 
 .contact_form {
@@ -46,7 +46,7 @@
     display: block;
     text-align: end;
     margin: 5px;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 .contactErrorMess {
@@ -70,14 +70,15 @@
     display: block;
     position: relative;
     padding: 20px 0;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
+    filter: drop-shadow(0.8px 0.8px 1.8px hsla( var(--code), 0%, 0%, 0.2));
 }
 
 .textarea_out {
     display: block;
     position: relative;
-    padding: 20px 0;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
+    filter: drop-shadow(0.8px 0.8px 1.8px hsla( var(--code), 0%, 0%, 0.2));
 }
 
 .input_out .input,
@@ -86,7 +87,7 @@
     position: relative;
     display: block;
     color: var(--text);
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     padding: 5px 7px;
     letter-spacing: 1px;
     border: none;
@@ -102,7 +103,7 @@
 
 .input_out .input:focus,
 .input_out > textarea:focus {
-    border-bottom: 4px solid var(--invalid);
+    border-bottom: 2px solid var(--invalid);
 }
 
 .input_out .input:valid ~ .contactErrorMess {
@@ -126,6 +127,7 @@
     letter-spacing: 1px;
     font-family: Philosopher, Montserrat, cursive;
     z-index: 1;
+    filter: drop-shadow(1px 1px 2px hsla( var(--code), 0%, 0%, 0.4));
 }
 
 .input_out > label > span {
@@ -144,14 +146,13 @@
 }
 
 .contact_form_out > button {
-    width: 60%;
+    width: 40rem;
     margin: 20px auto;
-    padding: 10px 20px;
-    font-size: 2rem;
-    font-weight: 700;
-    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 2.5rem;
+    border-radius: 25px;
     border: 1px solid transparent;
-    box-shadow: 2px 2px 8px var(--theme);
+    filter: drop-shadow(2px 2px 4px hsla( var(--code), 0%, 0%));
     background: var(--color);
     color: var(--text);
     transition: all 0.1s ease-in-out;
@@ -161,16 +162,21 @@
     align-items: center;
     justify-content: center;
     letter-spacing: 2px;
+    text-shadow: 2px 2px 4px hsla( var(--code), 0%, 0%);
+    overflow: hidden;
 }
 
-.contact_form_out > button > #submitIcon {
+.contact_form_out > button > svg {
     opacity: 0 !important;
     transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transform: translateX(-100px);
+    filter: drop-shadow(2px 2px 4px hsla( var(--code), 0%, 0%));
     margin-right: -30px;
+    font-size: 3.5rem;
+    rotate: 180deg;
 }
 
-.contact_form_out > button:hover > #submitIcon {
+.contact_form_out > button:hover > svg {
     opacity: 1 !important;
     transform: translateX(0px);
     margin-right: 0px;
@@ -209,7 +215,6 @@
 
     .contact_form_out {
         justify-content: center;
-        padding: 4vh 0;
     }
 
     .contact_form {

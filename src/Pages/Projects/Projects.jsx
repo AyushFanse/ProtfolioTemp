@@ -7,12 +7,13 @@ import {
     ArrowBackIosNewRounded,
     ArrowForwardIosRounded,
 } from "@mui/icons-material";
+import { BiLinkExternal } from "react-icons/bi";
 
 const Projects = () => {
     const [open, setOpen] = useState(false);
     const [RowData, setRowData] = useState("");
     const count = ProjectsData.length;
-    const [active, setActive] = useState(Math.floor(count/2));
+    const [active, setActive] = useState(Math.floor(count / 2));
 
     const handleClickOpen = (row_data) => {
         setRowData(row_data);
@@ -50,10 +51,10 @@ const Projects = () => {
                                                 href={project.site_link}
                                                 rel="noreferrer"
                                                 target="_blank"
-                                                className="material-symbols-rounded"
+                                                className="open_link"
                                                 aria-label="Website"
                                             >
-                                                ads_click
+                                                <BiLinkExternal />
                                             </a>
                                         </div>
                                     </div>
@@ -62,28 +63,26 @@ const Projects = () => {
                         ))}
                     </Carousel>
                 </div>
-                    <div className="carousel_button jsb flex ac row">
-                        <button className="nav left flex ac jc">
-                            <ArrowBackIosNewRounded
-                                onClick={() => setActive((i) => i - 1)}
-                                sx={{ display: active > 0 ? "flex" : "none" }}
+                <div className="carousel_button jsb flex ac row">
+                    <button className="nav left flex ac jc">
+                        <ArrowBackIosNewRounded
+                            onClick={() => setActive((i) => i - 1)}
+                            sx={{ display: active > 0 ? "flex" : "none" }}
+                        />
+                    </button>
+
+                    {active < count - 1 && (
+                        <button className="nav right flex ac jc">
+                            <ArrowForwardIosRounded
+                                onClick={() => setActive((i) => i + 1)}
+                                sx={{
+                                    display:
+                                        active < count - 1 ? "flex" : "none",
+                                }}
                             />
                         </button>
-
-                        {active < count - 1 && (
-                            <button className="nav right flex ac jc">
-                                <ArrowForwardIosRounded
-                                    onClick={() => setActive((i) => i + 1)}
-                                    sx={{
-                                        display:
-                                            active < count - 1
-                                                ? "flex"
-                                                : "none",
-                                    }}
-                                />
-                            </button>
-                        )}
-                    </div>
+                    )}
+                </div>
             </div>
             <DialogBox
                 RowData={RowData}

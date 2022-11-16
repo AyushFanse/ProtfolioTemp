@@ -150,7 +150,7 @@ const Contact = () => {
                                         id="message"
                                         name="message"
                                         className="input"
-                                        rows="9"
+                                        rows="8"
                                         autoCorrect="false"
                                         placeholder=" "
                                         pattern="[a-zA-Z0-9]{12, 600}"
@@ -175,19 +175,14 @@ const Contact = () => {
                                 </div>
                             </div>
                         </div>
-                        <button type="submit">
+                        <button type="submit" >
                             Submit
                             {wait ? (
                                 <CircularProgress
-                                    size={30}
                                     id="CircularProgress"
                                 />
                             ) : (
                                 <KeyboardBackspace
-                                    sx={{
-                                        fontSize: "2.5rem",
-                                        rotate: "180deg",
-                                    }}
                                     id="submitIcon"
                                 />
                             )}

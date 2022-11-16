@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Home from "../Home/Home";
 import About from "../About/About";
 import Projects from "../Projects/Projects";
@@ -10,10 +10,18 @@ import { ScrollTop } from "../../Components/Common/Functions";
 
 const Website = () => {
     const [loader, setLoader] = React.useState(false);
+    const isLoaded = sessionStorage.getItem("load");
 
-    setTimeout(() => {
-        setLoader(true);
-    }, 3500);
+    useEffect(() => {
+        if (isLoaded) setLoader(true);
+
+        if (!isLoaded) {
+            setTimeout(() => {
+                setLoader(true);
+                sessionStorage.setItem("load", "Loaded");
+            }, 3500);
+        }
+    }, [isLoaded, loader]);
 
     return (
         <>

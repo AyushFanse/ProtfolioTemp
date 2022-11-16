@@ -118,7 +118,7 @@
 .glasscard,
 .skill_link {
     transition: 0.5s ease-in-out;
-    filter: drop-shadow(0.5px 0.5px 1.3px hsla(var(--code), 0%, 0%, 0.7));
+    filter: drop-shadow(1px 1px 1px hsla(var(--code), 0%, 0%, 0.5));
 }
 
 .skill_link > img {

@@ -153,6 +153,9 @@
         padding: 0 20px 20px;
         text-align: right;
     }
+    .timeline > li .timeline-panel-last {
+        padding: 4px 20px 0 !important;
+    }
     .timeline > li .timeline-image {
         left: 50%;
         transform: translateX(-50%);
