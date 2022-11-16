@@ -1,14 +1,15 @@
 .skills_container {
-    height: 100%;
+    height: auto;
     min-height: 100vh;
     width: 100%;
     background: transparent;
     overflow: hidden;
+    display: grid;
 }
 
 .skills_container_inner {
-    height:100%;  
-    padding: 100px 0;
+    height:auto;  
+    min-height: inherit;
 }
 
 .tag-list {
@@ -68,15 +69,6 @@
     inset: 0;
 }
 
-@keyframes loop {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
 #contSkills {
     gap: 20px;
 }
@@ -96,6 +88,71 @@
     font-family: "Montserrat";
     filter: drop-shadow(2px 2px 10px var(--theme));
     text-decoration: none;
+}
+
+/*# Container #*/
+
+.glasscard {
+    width: fit-content;
+    font-weight:700;
+    margin: 25px auto;
+    padding: 25px 60px;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(20px);
+    border-radius: 25px;
+    border: 1px solid var(--color);
+}
+
+.glasscard > ul {    
+    column-gap: 50px;
+}
+
+.skill_link{
+    text-decoration: none;
+    color: var(--text);
+    gap: 20px;
+    display: flex;
+    justify-content: flex-start;   
+    font-size: 3rem; 
+}
+
+.glasscard, .skill_link{
+    transition: 0.5s ease-in-out;
+}
+
+.skill_link > img{
+    height:3.5rem;
+    aspect-ratio: 1/1;
+}
+
+.glasscard:hover {
+    background: hsl(var(--code), 100%, 98%);
+    box-shadow:0px 0px 60px var(--color);
+}
+
+.glasscard:hover .skill_link{
+    color:var(--theme);
+}
+
+@keyframes loop {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@media (min-width: 769px ){
+    .glasscard ul:has(li:nth-child(21)) {
+        columns: 2;
+    }
+    .glasscard ul:has(li:nth-child(31)) {
+        columns: 3;
+    }
+    .glasscard ul:has(li:nth-child(41)) {
+        columns: 4;
+    }
 }
 
 @media (max-width: 768px) {
@@ -119,10 +176,6 @@
         background: hsl(var(--code), 100%, 97%);
         box-shadow:0px 0px 60px var(--color);
     }
-
-    .glasscard .skill_link{
-        color:var(--theme);
-    }
 }
 
 @media (max-width: 500px) {
@@ -139,44 +192,4 @@
     .glasscard {
         background: hsla(var(--code), 0%, 55%, 0.102);
     }
-}
-
-/*# Container #*/
-
-.glasscard {
-    width: fit-content;
-    margin: auto;
-    padding: 25px 60px;
-    -webkit-backdrop-filter: blur(3px);
-    backdrop-filter: blur(20px);
-    border-radius: 25px;
-    border: 1px solid var(--color);
-}
-
-.skill_link{
-    text-decoration: none;
-    font-size: 2.2rem;
-    font-weight:700;
-    color: var(--text);
-    gap: 20px;
-    display: flex;
-    justify-content: flex-start;    
-}
-
-.glasscard, .skill_link{
-    transition: 0.5s ease-in-out;
-}
-
-.skill_link > img{
-    height:3rem;
-    aspect-ratio: 1/1;
-}
-
-.glasscard:hover {
-    background: hsl(var(--code), 100%, 98%);
-    box-shadow:0px 0px 60px var(--color);
-}
-
-.glasscard:hover .skill_link{
-    color:var(--theme);
 }
