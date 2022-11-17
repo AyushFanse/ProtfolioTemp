@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
     Dialog,
     DialogContent,
@@ -6,10 +6,9 @@ import {
     DialogActions,
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import DialogTitle from './DialogTitle';
+import DialogTitle from "./DialogTitle";
 
 const DialogBox = ({ RowData, handleClose, open }) => {
-
     const BootstrapDialog = styled(Dialog)(({ theme }) => ({
         "& .MuiDialogContent-root": {
             padding: theme.spacing(2),
@@ -23,57 +22,42 @@ const DialogBox = ({ RowData, handleClose, open }) => {
         <>
             <BootstrapDialog
                 onClose={handleClose}
-                aria-labelledby='customized-dialog-title'
+                aria-labelledby="customized-dialog-title"
                 open={open}
-                sx={{ backdropFilter: "blur(5px)", fontSize:'2rem' }}
+                id="dialog_outer"
             >
-                <DialogTitle onClose={handleClose}>
-                    {RowData.title}
-                    <Typography
-                        sx={{
-                            fontSize: "1rem",
-                            lineHeight: 0.7
-                        }}
-                    >
-                        {RowData.date}
-                    </Typography>
+                <DialogTitle onClose={handleClose} id="dialog_header">
+                    <Typography id="dialog_heading">{RowData.title}</Typography>
+                    <Typography id="dialog_date">{RowData.date}</Typography>
                 </DialogTitle>
                 <DialogContent dividers>
-                    <Typography gutterBottom sx={{ p: 1, fontSize:'1.5rem' }}>
+                    <Typography gutterBottom id="dialog_body_data">
                         {RowData.description}
                     </Typography>
                     {RowData.skills ? (
                         <div>
-                            <strong>Skills</strong>
-                            <Typography gutterBottom sx={{ p: 1, fontSize:'1.5rem' }}>
+                            <strong id="dialog_subheading">Skills</strong>
+                            <Typography gutterBottom id="dialog_body_data">
                                 {RowData.skills}
                             </Typography>
                         </div>
                     ) : null}
                     {RowData.features ? (
                         <div>
-                            <strong>Features</strong>
-                            <Typography gutterBottom sx={{ p: 1, fontSize:'1.5rem' }}>
+                            <strong id="dialog_subheading">Features</strong>
+                            <Typography gutterBottom id="dialog_body_data">
                                 {RowData.features}
                             </Typography>
                         </div>
                     ) : null}
                 </DialogContent>
-                <DialogActions
-                    sx={{
-                        display: "flex",
-                        justifyContent: "space-evenly",
-                        flexWrap: "wrap",
-                        my:2
-                    }}
-                >
+                <DialogActions id="dialog_action_buttons">
                     {RowData.frontend ? (
                         <a
                             href={RowData.frontend}
-                            target='_blank'
-                            rel='noreferrer'
-                            className='DialogButton'
-                            id='viewLinkCard'
+                            target="_blank"
+                            rel="noreferrer"
+                            id="viewLinkCard"
                         >
                             FrontEnd
                         </a>
@@ -81,10 +65,9 @@ const DialogBox = ({ RowData, handleClose, open }) => {
                     {RowData.admin ? (
                         <a
                             href={RowData.admin}
-                            target='_blank'
-                            rel='noreferrer'
-                            className='DialogButton'
-                            id='viewLinkCard'
+                            target="_blank"
+                            rel="noreferrer"
+                            id="viewLinkCard"
                         >
                             AdminPage
                         </a>
@@ -92,10 +75,9 @@ const DialogBox = ({ RowData, handleClose, open }) => {
                     {RowData.backend ? (
                         <a
                             href={RowData.backend}
-                            target='_blank'
-                            rel='noreferrer'
-                            className='DialogButton'
-                            id='viewLinkCard'
+                            target="_blank"
+                            rel="noreferrer"
+                            id="viewLinkCard"
                         >
                             BackEnd
                         </a>
@@ -103,10 +85,9 @@ const DialogBox = ({ RowData, handleClose, open }) => {
                     {RowData.site_link ? (
                         <a
                             href={RowData.site_link}
-                            target='_blank'
-                            rel='noreferrer'
-                            className='DialogButton'
-                            id='viewLinkCard'
+                            target="_blank"
+                            rel="noreferrer"
+                            id="viewLinkCard"
                         >
                             Visit Website
                         </a>
@@ -115,6 +96,6 @@ const DialogBox = ({ RowData, handleClose, open }) => {
             </BootstrapDialog>
         </>
     );
-}
+};
 
 export default DialogBox;

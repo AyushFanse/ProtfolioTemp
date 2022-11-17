@@ -7,35 +7,11 @@ const BootstrapDialogTitle = (props) => {
     const { children, onClose, ...other } = props;
 
     return (
-        <DialogTitle
-            sx={{
-                mr: 7,
-                p: 2,
-                pl: 3,
-                fontFamily: "Montserrat",
-                textTransform: "uppercase",
-                fontSize: "2.5rem",
-                fontWeight: 700,
-                textAlign:'left'
-            }}
-            {...other}
-        >
+        <DialogTitle {...other}>
             {children}
             {onClose ? (
-                <IconButton
-                    onClick={onClose}
-                    sx={{
-                        position: "absolute",
-                        right: 20,
-                        top: 20,
-                        width:'fit-content',
-                        color: 'var(--theme)',
-                        "&:hover": {
-                            backgroundColor: "red"
-                        }
-                    }}
-                >
-                    <CloseIcon sx={{ fontSize: "2.5rem"}} />
+                <IconButton onClick={onClose} id="dialog_close">
+                    <CloseIcon />
                 </IconButton>
             ) : null}
         </DialogTitle>

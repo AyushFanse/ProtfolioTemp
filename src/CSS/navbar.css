@@ -52,7 +52,7 @@
     cursor: pointer;
     color: var(--text);
     font-size: 2rem;
-    filter: drop-shadow(2px 2px 4px hsla( var(--code), 0%, 0%));
+    filter: drop-shadow(2px 2px 4px hsla(var(--code), 0%, 0%));
 }
 
 #navbar_section.active ~ .nav_tab .link {
@@ -86,7 +86,7 @@
     z-index: 510;
     top: 0px;
     right: 0px;
-    filter: drop-shadow(2px 2px 3px hsla( var(--code), 0%, 0%, 0.7));
+    filter: drop-shadow(2px 2px 3px hsla(var(--code), 0%, 0%, 0.7));
 }
 .menu_icon span {
     background-color: var(--color);
@@ -141,14 +141,14 @@
     right: 20px;
     width: 35px;
     height: 30px;
-    filter: drop-shadow(2px 2px 4px hsla( var(--code), 0%, 0%));
+    filter: drop-shadow(2px 2px 4px hsla(var(--code), 0%, 0%));
 }
 
 .navbar_menu .menu_icon > #menu_icon_add,
 .link > svg {
     font-size: 4rem;
     color: var(--color);
-    filter: drop-shadow(2px 2px 4px hsla( var(--code), 0%, 0%));
+    filter: drop-shadow(2px 2px 4px hsla(var(--code), 0%, 0%));
 }
 
 .navbar_menu.active .menu_icon #menu_icon_add {
@@ -185,7 +185,7 @@
 
 .menu_tab > div > span {
     font: 700 3rem Montserrat;
-    filter: drop-shadow(2px 2px 4px hsla( var(--code), 0%, 0%));
+    filter: drop-shadow(2px 2px 4px hsla(var(--code), 0%, 0%));
 }
 
 /*^----------------------------> MEDIA QUERY <----------------------------^*/

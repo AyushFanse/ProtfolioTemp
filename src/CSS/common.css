@@ -9,10 +9,10 @@
     margin: 0;
     padding: 0 10px;
     font-size: 5rem;
-    font-family: Philosopher, Montserrat, cursive;
+    font-family: var(--styled-font);
     font-weight: 600;
     color: var(--color);
     letter-spacing: 3px;
     text-transform: capitalize;
-    filter: drop-shadow(2px 2px 3px hsla( var(--code), 0%, 0%, 1));
+    filter: drop-shadow(2px 2px 3px hsla(var(--code), 0%, 0%, 1));
 }

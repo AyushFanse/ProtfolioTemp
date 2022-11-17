@@ -10,7 +10,7 @@ import { ScrollTop } from "../../Components/Common/Functions";
 
 const Website = () => {
     const [loader, setLoader] = React.useState(false);
-    const isLoaded = sessionStorage.getItem("load");
+    const isLoaded = sessionStorage.getItem("onload");
 
     useEffect(() => {
         if (isLoaded) setLoader(true);
@@ -18,7 +18,7 @@ const Website = () => {
         if (!isLoaded) {
             setTimeout(() => {
                 setLoader(true);
-                sessionStorage.setItem("load", "Loaded");
+                sessionStorage.setItem("onload", new Date());
             }, 3500);
         }
     }, [isLoaded, loader]);

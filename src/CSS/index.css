@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Comfortaa:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yatra+One:wght@400&family=Philosopher:wght@400;700&family=Comfortaa:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap");
 
 @media (prefers-reduced-motion: no-preference) {
     :root {
@@ -8,20 +8,25 @@
 
 :root {
     font-size: 45.5%;
+    scroll-behavior: smooth;
 }
 
 :root {
+    /* --code: 82; */
+    /* --theme: hsl(227 48% 3%); */
     --code: 358;
     --bcode: 0;
     --color: hsl(var(--code, 358), 81%, 49%);
-    --theme: hsl(0deg 0% 11%);
+    --theme: hsl(227 0% 11%);
     --text: hsl(0, 0%, 100%);
-    --valid: rgb(31, 220, 56);
+    --valid: hsl(128, 75%, 49%);
     --invalid: hsl(0, 100%, 50%);
     --m-height: 100vh;
+    --default-font: Montserrat, cursive;
+    --styled-font: Philosopher, cursive;
 }
 
-@media (max-height: 600px) {
+@media (max-height: 400px) {
     :root {
         --m-height: 600px;
     }
@@ -55,7 +60,7 @@ body {
 
 body {
     margin: 0;
-    font-family: Montserrat;
+    font-family: var(--default-font);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;

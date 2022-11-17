@@ -53,30 +53,30 @@
     place-items: center;
     transition: background-color 0.3s;
     overflow: hidden;
-    width:100%;
+    width: 100%;
 }
 
-.LoaderHeading{
-    margin:0;
-    padding:0 15px 0 7px;
-    position:absolute;
-    top:70%;
+.LoaderHeading {
+    margin: 0;
+    padding: 0 15px 0 7px;
+    position: absolute;
+    top: 70%;
     overflow: hidden;
     font-style: oblique;
     color: var(--color);
 }
 
-.LoaderHeading:before{
-    content:'';
-    width:500px;
-    height:50px;
+.LoaderHeading:before {
+    content: "";
+    width: 500px;
+    height: 50px;
     background: var(--theme);
     border-left: 4px solid var(--theme);
-    margin:0;
-    padding:0;
-    position:absolute;
-    top:0;
-    left:-10px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: -10px;
     transition: all 0.5s;
     animation: LoaderHeading 4s infinite forwards;
     font-style: oblique;
@@ -107,13 +107,12 @@
     }
 }
 
-@media (min-height:629px){
+@media (min-height: 629px) {
     .pl {
         width: 8em;
         height: 8em;
     }
 }
-
 
 /* Animations */
 @keyframes bump {
@@ -170,22 +169,21 @@
     }
 }
 
-
 @keyframes LoaderHeading {
     0% {
         border-color: var(--theme);
     }
-    10%{
+    10% {
         transform: translateX(0px) skewX(-10deg);
         border-color: var(--color);
     }
-    40%{
+    40% {
         transform: translateX(408px) skewX(-10deg);
     }
-    70%{
+    70% {
         transform: translateX(408px) skewX(10deg);
     }
-    90%{
+    90% {
         transform: translateX(0px) skewX(10deg);
         border-color: var(--color);
     }

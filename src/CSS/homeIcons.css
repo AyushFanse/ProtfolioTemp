@@ -23,7 +23,7 @@
 .nav_icons ul li h6 {
     margin: 4px auto;
     text-transform: capitalize;
-    font-family:  Philosopher, Montserrat, cursive;
+    font-family: var(--styled-font);
     color: var(--text);
     letter-spacing: 0.075em;
     font-size: 1.4rem;
@@ -32,11 +32,11 @@
 #icons {
     color: var(--color);
     font-size: 4rem;
-    filter: drop-shadow(2px 2px 3px hsla( var(--code), 0%, 0%, 1));
+    filter: drop-shadow(2px 2px 3px hsla(var(--code), 0%, 0%, 1));
 }
 
 #FooterName {
-    filter: drop-shadow(2px 2px 3px hsla( var(--code), 0%, 0%, 1));
+    filter: drop-shadow(2px 2px 3px hsla(var(--code), 0%, 0%, 1));
 }
 
 @media (min-width: 768px) {

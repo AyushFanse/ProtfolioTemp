@@ -1,13 +1,13 @@
 .cls-1 {
-    fill: var(--text);
+    fill: hsl(var(--code), 3%, 100%, 0.9);
 }
 
 .cls-2 {
-    fill: var(--theme);
+    fill: hsl(var(--code), 3%, 27%, 1);
 }
 
 .cls-3 {
-    fill: hsl(var(--code), 3%, 27%);
+    fill: hsl(var(--code), 3%, 80%, 0.7);
 }
 
 .ghost > .four {
@@ -37,13 +37,11 @@
 }
 
 .grave {
-    height: 200px;
+    height: 175px;
     width: 150px;
     background-color: #666;
     position: absolute;
     bottom: 0;
-    left: 0;
-    right: 0;
     margin: auto;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
@@ -53,19 +51,14 @@
     display: block;
     text-align: center;
     font-size: 5em;
-    margin-top: 5rem;
     letter-spacing: 3px;
-    font-family: "Ravenscroft";
+    font-family: "Yatra One";
 }
 
 .ghost {
     position: absolute;
     bottom: 0;
     left: 0;
-}
-
-.hide {
-    display: none;
 }
 
 #Objects {
@@ -78,13 +71,17 @@
 }
 
 #AuthButton {
-    margin: 22px 0px;
-    padding: 6px 25px;
+    margin: auto;
+    padding: 6px 20px;
     border: none;
     box-shadow: 1px 1px 10px var(--color);
     border-radius: 25px;
     background: var(--color);
-    color: var(--theme);
+    color: var(--text);
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
+}
+
+.tc {
+    margin: 15px 0;
 }

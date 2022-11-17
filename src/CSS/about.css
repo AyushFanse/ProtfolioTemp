@@ -101,7 +101,7 @@
     font-size: 3rem;
     margin: 10px 0;
     text-transform: uppercase;
-    font-family: Philosopher, Montserrat, cursive;
+    font-family: var(--styled-font);
 }
 
 .timeline .timeline-panel > * {
@@ -120,7 +120,7 @@
     font-size: 2.7rem;
     color: var(--color);
     margin: 10px 0;
-    font-family: Philosopher, Montserrat, cursive;
+    font-family: var(--styled-font);
 }
 
 .timeline .timeline-body > ul,
