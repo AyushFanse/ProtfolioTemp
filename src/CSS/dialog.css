@@ -6,7 +6,7 @@
 #dialog_outer > div:nth-child(3) > div {
     background: var(--theme);
     color: var(--text);
-    border: 1px solid hsl(var(--code, 358), 81%, 49%, .7);
+    border: 1px solid hsl(var(--code, 358), 81%, 49%, 0.7);
     border-radius: 10px;
     box-shadow: 2px 2px 4px var(--theme), inset 3px 3px 4px var(--theme);
 }

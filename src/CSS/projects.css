@@ -1,12 +1,12 @@
 .projects_container {
     height: auto;
-    min-height: var(--m-height);
+    min-height: calc(var(--m-height) - 200px);
     width: 100%;
     background: transparent;
 }
 
 .projects_container_inner {
-    height: calc(var(--m-height) - 200px);
+    height: auto;
     width: 100%;
     background: transparent;
     padding: 10px 0;
@@ -15,8 +15,8 @@
 
 .carousel {
     position: relative;
-    width: 611px;
-    height: 400px;
+    width: 611px;    
+    aspect-ratio: 16/12;
     perspective: 500px;
     transform-style: preserve-3d;
 }
@@ -43,6 +43,7 @@
     cursor: pointer;
     background: unset;
     border: unset;
+    padding: 30px 0px;
 }
 
 .left {
@@ -62,7 +63,7 @@
 .CardOut {
     position: relative;
     width: 100%;
-    height: 100%;
+    aspect-ratio: 12/8;
     border-radius: 10px;
     box-shadow: 1px 1px 20px hsla(var(--code), 0%, 0%, 0.205);
     overflow: hidden;
@@ -100,7 +101,7 @@
     position: absolute;
     content: "";
     width: 100%;
-    height: 100%;
+    height:100%;
     top: 0;
     background: linear-gradient(
         0deg,
@@ -122,7 +123,7 @@
     position: absolute;
     top: 0;
     width: 100%;
-    height: 100%;
+    height:100%;
     z-index: 4;
 }
 
@@ -197,7 +198,8 @@
     opacity: 1;
 }
 
-@media (max-width: 667px) {
+@media (max-width: 768px) {
+
     .card-container {
         height: 5%;
     }
@@ -208,15 +210,12 @@
 
     .carousel {
         width: 100%;
-        height: 100%;
         margin: 0;
     }
 
     .CardOut {
-        height: auto;
         width: 90%;
         margin: 72px auto;
-        aspect-ratio: 12/8;
     }
 
     .Card .CardData > h1 {
@@ -244,16 +243,6 @@
     .right > svg,
     .left > svg {
         font-size: 7.5rem;
-    }
-}
-
-@media (max-width: 450px) {
-    .projects_container {
-        min-height: 600px;
-    }
-
-    .projects_container_inner {
-        height: auto;
     }
 }
 

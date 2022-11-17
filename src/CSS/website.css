@@ -90,6 +90,7 @@
 .pl {
     animation-name: bump;
     animation-timing-function: linear;
+    height: 18rem;
 }
 .pl__ring {
     stroke: hsla(var(--loader_hue), 10%, 10%, 0.1);
@@ -100,21 +101,18 @@
     animation-timing-function: cubic-bezier(0.42, 0.17, 0.75, 0.83);
 }
 
-/* Dark theme */
 @media (prefers-color-scheme: dark) {
     .pl__ring {
         stroke: hsla(var(--loader_hue), 10%, 90%, 0.1);
     }
 }
 
-@media (min-height: 629px) {
+@media (max-height: 450px) {
     .pl {
-        width: 8em;
-        height: 8em;
+        height: 12rem;
     }
 }
 
-/* Animations */
 @keyframes bump {
     from,
     42%,

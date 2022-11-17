@@ -1,7 +1,7 @@
 .home_container {
     padding: 0 50px;
     height: auto;
-    min-height: var(--m-height);
+    min-height: 100vh;
     z-index: 50;
 }
 @property --hue {
@@ -20,7 +20,7 @@
     display: grid;
     place-items: center;
     height: auto;
-    min-height: var(--m-height);
+    min-height: 100vh;
     position: absolute;
     right: 0;
     top: 0;
