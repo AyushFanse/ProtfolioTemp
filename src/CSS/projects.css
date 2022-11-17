@@ -6,8 +6,7 @@
 }
 
 .projects_container_inner {
-    height: auto;
-    min-height: calc(var(--m-height) - 100px);
+    height: calc(var(--m-height) - 200px);
     width: 100%;
     background: transparent;
     padding: 10px 0;
