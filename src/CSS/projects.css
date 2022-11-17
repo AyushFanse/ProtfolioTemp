@@ -6,7 +6,7 @@
 }
 
 .projects_container_inner {
-    height: calc(var(--m-height) - 200px);
+    height: calc(var(--m-height) - 130px);
     width: 100%;
     background: transparent;
     padding: 10px 0;
