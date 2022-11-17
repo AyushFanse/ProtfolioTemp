@@ -21,15 +21,9 @@
     --text: hsl(0, 0%, 100%);
     --valid: hsl(128, 75%, 49%);
     --invalid: hsl(0, 100%, 50%);
-    --m-height: 100vh;
+    --m-height: 768px;
     --default-font: Montserrat, cursive;
     --styled-font: Philosopher, cursive;
-}
-
-@media (max-height: 400px) {
-    :root {
-        --m-height: 600px;
-    }
 }
 
 ::-webkit-scrollbar {

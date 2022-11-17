@@ -6,7 +6,8 @@
 }
 
 .projects_container_inner {
-    height: calc(var(--m-height) - 200px);
+    height: auto;
+    min-height: calc(var(--m-height) - 100px);
     width: 100%;
     background: transparent;
     padding: 10px 0;
@@ -249,11 +250,11 @@
 
 @media (max-width: 450px) {
     .projects_container {
-        min-height: 450px;
+        min-height: 600px;
     }
 
     .projects_container_inner {
-        height: 400px;
+        height: auto;
     }
 }
 

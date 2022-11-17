@@ -76,9 +76,9 @@ const Navbar = () => {
                             </div>
                         </li>
                         <li className="menu_tab flex jc ac">
-                            <div className="link flex ac row" title="Products">
+                            <div className="link flex ac row" title="Projects">
                                 <BiCategoryAlt id="menu_icons" />
-                                <span className="ts">Products</span>
+                                <span className="ts">Projects</span>
                             </div>
                         </li>
                         <li className="menu_tab flex jc ac">
