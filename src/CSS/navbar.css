@@ -163,7 +163,7 @@
     transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     z-index: 500;
     width: 100%;
-    height: var(--m-height);
+    height: 100vh;
     background: var(--theme);
     gap: 20px;
 }
