@@ -12,12 +12,10 @@
 }
 
 :root {
-    /* --code: 82; */
-    /* --theme: hsl(227 48% 3%); */
     --code: 358;
     --bcode: 0;
     --color: hsl(var(--code, 358), 81%, 49%);
-    --theme: hsl(227 0% 11%);
+    --theme: hsl(var(--bcode) 0% 11%);
     --text: hsl(0, 0%, 100%);
     --valid: hsl(128, 75%, 49%);
     --invalid: hsl(0, 100%, 50%);
