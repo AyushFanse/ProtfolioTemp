@@ -9,9 +9,13 @@
 :root {
     font-size: 45.5%;
     scroll-behavior: smooth;
+    font-family: Montserrat, cursive;
+    --default-font: Montserrat, cursive;
+    --styled-font: Philosopher, cursive;
+    --m-height: 768px;
 }
 
-:root {
+body:not(:has(.active)) {
     --code: 358;
     --bcode: 0;
     --color: hsl(var(--code, 358), 81%, 49%);
@@ -19,9 +23,32 @@
     --text: hsl(0, 0%, 100%);
     --valid: hsl(128, 75%, 49%);
     --invalid: hsl(0, 100%, 50%);
-    --m-height: 768px;
-    --default-font: Montserrat, cursive;
-    --styled-font: Philosopher, cursive;
+    --shadows: 2px 2px 4px hsla(var(--bcode), 0%, 0%);
+    --tea-cup: hsl(0, 0%, 100%);
+}
+
+body:has(.site.active) {
+    --code: 248;
+    --bcode: 0;
+    --color: hsl(var(--code, 358), 75%, 57%);
+    --theme: hsl(var(--bcode) 0% 100%);
+    --text: hsl(0, 0%, 0%);
+    --valid: hsl(128, 75%, 49%);
+    --invalid: hsl(0, 100%, 50%);
+    --shadows: 2px 2px 2.5px hsla(var(--bcode), 0%, 0%, 0.4);
+    --tea-cup: hsl(var(--code, 358), 75%, 57%);
+}
+
+:root:not(.active) {
+    --code: 358;
+    --bcode: 0;
+    --color: hsl(var(--code, 358), 81%, 49%);
+    --theme: hsl(var(--bcode) 0% 11%);
+    --text: hsl(0, 0%, 100%);
+    --valid: hsl(128, 75%, 49%);
+    --invalid: hsl(0, 100%, 50%);
+    --shadows: 2px 2px 4px hsla(var(--bcode), 0%, 0%);
+    --tea-cup: hsl(0, 0%, 100%);
 }
 
 ::-webkit-scrollbar {
